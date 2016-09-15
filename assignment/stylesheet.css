@@ -1,0 +1,41 @@
+
+p{
+	background-color: red;color:cyan; text-indent: 1cm; text-decoration: blink;
+ font-size:68px; font-style: oblique; font-weight: bolder; 
+}
+h1{
+	color:blue; letter-spacing:5px; text-decoration: line-through; ;
+}
+div h1{background-color:blue;color:black; word-spacing: 10px}
+
+.class1 { background-color:teal; }
+
+section > h3 {text-align: left; text-shadow:4px 5px 10px purple; font-stretch: extra-expanded;}
+div {margin:13% 15%;}
+img{margin:5% 5%; border:3px groove red;padding: 6px;position:relative;left:110px;top:0px;}
+marquee {margin:5% 5%; border:20px dashed red;padding: 6px;}
+.anchor{font-size:40px;}
+.anchor:visited{color:red;opacity:.9;}
+.anchor:hover{color:red;opacity:.5;}
+.anchor:active{color:red;opacity:2.6;}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
