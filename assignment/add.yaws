@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head?
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="adme.css" media="all">
+	
+	
+	
+ <style type="text/css">
+	body{
+		background-image: url("cover.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+	
+	#info{
+	font-size:25px; color:black;
+	}
+	</style> 
+	
+</head>
+<body>
+<img src="ad.jpg" heigth="100" width="120" align="left"><p style="font-size:80px;color:white">me</p></img>
+<nav>
+<p id="info">
+	<form align="center">
+		<a href="home.html" ><input type="button" value="HOME"/></a> 
+		<a href="company.html"><input type="button" value="COMPANY"></a>
+		<a href="register.html"><input type="button" value="REGISTER"></a> 
+		<a href="login.html"><input type="button" value="LOG IN"></a> 
+		<a href="query.html"><input type="button" value="QUERIES"></a> 
+		</form>	
+		</p>
+		</nav>
+		
+		</br>
+		</br>
+		</br>
+		</br>
+		<img src="explore.jpg" align="right"  style="border:1px solid red; width:600px;" ></br>
+		</br>
+		</br>
+		</br>
+		<p style="font-size:20px" align="center"> Enter your E-mail ID to get exciting offer
+		
+		</br>
+		</br>
+		<input type="text" name="text" width="25" heigth="25" />
+		<input type="button" value="SUBCRIBE" style="font-size:15px;colorblack"></input></img>
+		</p>
+</body>
+</html>
