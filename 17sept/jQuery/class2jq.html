@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+<style type="text/css">
+	.style{
+	font-size: 25px;
+	background-color: red;	
+}
+</style>
+<ul>
+	<li class="remove">a</li>
+	<li class="remove1">b</li></br>
+	<li class="remove">c</li>
+	<li class="remove1">d</li></br>
+	<li class="remove">e</li>
+	<li class="remove1">f</li></br>
+	<li class="remove">a</li>
+	<li class="remove1">b</li></br>
+	<li class="remove">g</li>
+	<li class="remove1">h</li>
+</ul>
+<select id="place">
+	<option value="mandya">mandya</option>
+	<option value="maddur">maddur</option>
+	<option value="banglore">banglore</option>
+	<option value="mysore">mysore</option>
+	<option value="rama">rama</option>
+</select>
+<button id="button">click here to display the city </button>
+<p class="style">hello afternoon</p>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<style type="text/css">
+	
+</style>
+<script type="text/Javascript">
+jQuery('ul').find('.remove').css('background-color','red').end().find('.remove1').css('background-color','yellow').end();
+$( "li.remove" ).replaceWith( "<li>New</li>" );
+//$('ul').remove(.remove1);
+$(document).ready(function(){
+	$('#button').click(function(){
+		alert($('#place').val());
+		alert($('#place').text());
+		alert($('#place :selected').text());
+	});
+});
+
+
+    $('p').mouseover(function(){
+    	$('p').css('background-color','yellow');
+    });
+     $('p').mouseleave(function(){
+    	$('p').css('background-color','red');
+    });
+
+     $("button").click(function(){
+        $("p").text("Hello world!");
+    });
+
+</script>
+</body>
+</html>

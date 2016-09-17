@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body align="center">
+<div>
+<form>
+<label>Enter name</label>
+	<input type="text" name="name"/></br>
+	<label>Enter password</label>
+	<input type="password" name="pass"></br>
+	<input type="checkbox" name="select"><label>Remember?</label>
+</form>
+</div>
+<button id="change">Submit</button>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous">
+	
+</script>
+<script type="text/Javascript">
+jQuery('button').click(function(){
+	jQuery('input').css("border","red solid 1px")});
+//jQuery('<p><a>CLICK HERE</a></p>').find('a').attr('href','form.html').end().appendTo('body');
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+function showtext()
+{
+document.getElementById('show').style.display="none";
+document.getElementById('hide').style.display="block";
+
+}
+
+function hidetext()
+{
+document.getElementById('hide').style.display="none";	
+document.getElementById('show').style.display="block";
+}
+</script>
+</head>
+<body>
+<p id="demo"></p>
+<p id="new"></p>
+<input id="show" type="button" name="submit" value="show text" onclick="showtext()">
+<input id="hide" type="button" name="submit" value="hide text" style="display:none" onclick="hidetext()">
+
+</body>
+</html>

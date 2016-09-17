@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="name" onclick="myChange()">Click here to view my profile</button>
+<p id="name1"></p>
+<p id="name2"></p>
+<p id="name3"></p>
+<p id="name4"></p>
+<script type="text/javascript">
+	var data = {
+		"name":"sujina",
+		"age":"22",
+		"address":{
+			"street":"balakrishna road 1st main,5th cross",
+			"city":"mysore",
+		}
+	}
+
+	function myChange(){
+		document.getElementById("name1").innerHTML="name " + data.name;
+		document.getElementById("name2").innerHTML="age  "+ data.age;
+		document.getElementById("name3").innerHTML="address " + data.address.street;
+		document.getElementById("name4").innerHTML="street " +data.address.city;
+	}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+<input type="button" value="Add color"/>
+
+<div>This is div element	
+<p>assd hgf hf <em>aa</em></p><h1>hello</h1>
+<p>assd hgf hf <em>aa</em><h1>helo</h1><h1>helo</h1></p>
+<p>assd hgf hf <em>aa</em></p>
+<p>assd hgf hf </p>
+</div>
+<a href="#">link1</a>
+<a href="#">link2</a>
+<a href="#" class="link">link3</a>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<style type="text/css">
+.color{
+	color:green;
+	
+
+}	
+</style>
+<script type="text/Javascript">
+/*jQuery('div').click(function(){
+	jQuery('div').css('background-color','yellow')});
+
+jQuery('input').click(function(){ jQuery('form')
+	jQuery('input', document.forms[0])});
+jQuery('input').click(function(){
+	jQuery('input', document.forms[1]).hide('form[0]')});*/
+
+	//to find the number of para and return number of em tag 
+	alert('paragraph' + jQuery('p').length + 'the italics words number' + jQuery('p').find('em').length +'contents');
+	
+	//filtering
+	alert(jQuery('em', jQuery('p')).length);
+	
+	/*jQuery('input').click(function(){
+		jQuery('div').addClass('color')});*/
+		$('div').addClass('color');
+		$('div').find('h1').addBack().css('border','1px solid red');
+
+		//fadeout which lights the color where fadein lights appears
+		$('div').find('p').fadeOut('1',function(){
+			$('div').find('p').fadeIn('fast');
+		});
+
+//appends ancho tag
+ jQuery('<p><a>LINK</a></p>').find('a').attr('href','http://www.google.com').end().appendTo('body');
+ 
+ //to remove the anchor tag
+ //jQuery('a').remove();
+ jQuery('a').remove('.link');
+
+//stays in same page
+ jQuery('a').removeAttr('href');
+</script>
+</body>
+</html>

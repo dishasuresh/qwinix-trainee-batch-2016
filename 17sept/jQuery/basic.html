@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="yellow">	
+<p>DOM is ready</p>
+<div>hello</div>
+<div>qwinix</div>
+<div>welcomes</div>
+<a href="#" class="link" >LINK</a>
+<a href="#" class="link">LINK</a>
+<a href="#" class="link">LINK</a>
+<a href="#">LINK</a>
+<a href="#">LINK</a>
+<a href="#">LINK</a>
+<ol>
+	<li>mysore</li>
+	<li>banaluru</li>
+	<li>maddur</li>
+	<li>madya</li>
+</ol>
+<table>
+	<tr><td>0</td><td>even</td></tr>
+	<tr><td>1</td><td>odd</td></tr>
+	<tr><td>2</td><td>even</td></tr>
+	<tr><td>3</td><td>odd</td></tr>
+	<tr><td>4</td><td>even</td></tr>
+	<tr><td>5</td><td>odd</td></tr>
+</table>
+<form>
+	<input type="button" name=""/>
+	<input type="text" name=""/>
+	<input type="checkbox" name=""/>
+	<input type="radio" name=""/>
+</form>
+<form>
+	<input type="button" name="" onclick="" />	
+	<input type="text" name=""/>
+	<input type="checkbox" name=""/>
+	<input type="radio" name=""/>
+</form>
+<form>
+	
+	<input type="text" name=""/>
+	<input type="checkbox" name=""/>
+	<input type="radio" name="asdf"/>
+</form>
+<div>Click here</div>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous">
+	
+</script>
+<script type="text/Javascript">
+jQuery(document).ready(function($){
+	alert($('p').text());
+	});
+//to fect first element from ordered list
+alert('ordered list' + jQuery('ol li:first'));
+
+//class names "query" is created and a text is added
+jQuery('div').text('heee').addClass("query");
+
+/*jQuery('div')
+.hide()
+.text("hee")
+.addClass("query");*/
+//alert('page content'+ jQuery('a.link').length + ' <a> elements!,And has a' + jQuery(document.body).attr('bgcolor')+ 'background');
+
+//finds the number of achor tags in body tag
+alert('page content' + jQuery(document.getElementsByTagName('a')).length+ '<a> elements!' );
+
+//to open a new tab on clicked on link
+jQuery('a.link').attr('target','_blank','href','http://www.google.com');
+
+//totaly number of forms used
+alert('selected' + jQuery('input',$('form')).length + 'inputs');
+alert('selected' + jQuery('input', document.forms[0]).length + 'inputs');
+alert('selected' + jQuery('input','body').length + 'inputs');
+jQuery('div').click(function(){
+	jQuery('div').css('background-color','red')});
+
+</script>
+</body>
+</html>
