@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>JAVA SCRIPT
+<title> JSCRIPT</title>
+</head>
+<body>
+  
+  <h3>Basics of javascript</h3>
+
+  <button onclick="document.getElementById('time').innerHTML = Date()">Click Me! </button> <br><br>
+  <p id="time">
+   
+   <p id="myid">
+   <button onmouseover="document.getElementById('myid').innerHTML=myFunction(11,11)">OVER ME!!</button><br><br>
+
+
+  <p id="demo">JavaScript </p>
+  <p id="dem">
+  <p id="tim"><br>
+
+  <p id="car"><br>
+
+  <select id="carsel" onchange="carFunction()">
+  <option value="Audi">AUDI</option>
+  <option value="volvo">VOLVO</option> 
+  <option value="nissan">NISSAN</option>
+  <option value="bmw">BMW</option>
+  </select>
+
+  <select class="clas" onclick="classFunction()">
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="css3">CSS3</option>
+  <option value="javascript">JAVASCRIPT</option>
+  </select>
+
+
+  <form>
+    <label>First Name</label><input type="text" name="Fname">
+    
+    </form>
+
+
+  <script>
+  function myFunction(a,b)
+  {
+
+  	return a * b;
+   }
+     document.getElementById("demo").innerHTML = myFunction(4, 3);
+    
+     document.getElementById("dem").innerHTML=myFunction(13,11);
+    </script>
+
+    <script>
+   function carFunction()
+    {
+      var c =document.getElementById("carsel").value;
+      document.getElementById("car").innerHTML="your selected:  " + c;
+    }
+   </script>
+  
+    <script>
+  	window.alert("Hello Google");
+ 
+  	console.log(13+25);
+  	console.log('Hello');
+    document.write(7+7);
+
+  </script>
+
+  <script>
+  	function classFunction()
+  	{
+  		
+
+  		console.log(document.getElementsByClassName("clas"));
+  	}
+  </script>
+ 
+
+</body>
+</html>

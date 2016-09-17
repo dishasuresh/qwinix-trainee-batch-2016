@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Title</title>
+
+ </head>
+  <body>
+
+  <form id="for">
+   First name:<input id='fn' type="text" name="fname"></input><br><br>
+   Last name:<input id='ln' type="text" name="lname"></input><br><br>
+   Age:<select id='sel'>
+     <option>22</option>
+     <option>23</option>
+     <option>24</option>
+     <option>25</option>
+   </select><br><br>
+   Company:<input id='comp' type="text" name="company"><br><br>
+ </form>
+
+   <button id="sub" onclick="submit()">SUBMIT</button>
+   
+   <p id="mydiv">
+
+   
+   </p>
+
+   <script type="text/javascript">
+  function submit()
+  {
+    var a=document.getElementById('fn').value;
+    var b=document.getElementById('ln').value;
+    var c=document.getElementById('sel').value;
+    var d=document.getElementById('comp').value;
+   
+   document.getElementById('for').style.display="none"
+     document.getElementById('mydiv').innerHTML = "first name: " + a + " <br> Last name: " + b + "<br> Age: " + c + "<br> Company:"+ d;
+    
+  }
+  </script>
+  </body>
+  </html>

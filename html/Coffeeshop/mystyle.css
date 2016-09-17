@@ -1,0 +1,84 @@
+h4 {
+    color: navy;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  /* *{
+  	background-color: white;
+  } */
+
+  h2
+  {
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid powderblue;
+    padding: 5px;
+    margin: 10px;
+
+  }
+
+  .c1{
+        color: green;
+        font-style: bold;
+   		font-family: arial;
+   	}
+ 
+    #myid ul li
+    {
+       list-style-type: square;
+       color:red;
+    }
+
+    div 
+    {
+       color:blue;
+       margin: 45px 45px 45px 45px;
+       border-style: dotted;
+       border-width: 2px;
+       padding: 
+    }
+          
+     p
+    {
+      letter-spacing: 3px;
+      word-spacing: 7px;
+
+      text-indent: 5cm;
+      font-size: 100%;
+      font-family: georgia;
+
+      font-stretch:expanded;
+    }
+    
+    section
+    {
+    	 text-decoration: underline;
+    	 text-transform: uppercase;
+    	 white-space:pre-line;
+    	 text-shadow: 2px 2px 18px green;
+    }
+   
+    img
+    {
+    	border-color: green;
+    	border-style: dotted;
+        border-width: 3px;
+        padding: 10px 10px 10px 10px;
+        margin: 45px 45px 45px 45px;
+        background-color: pink;
+        position:relative;
+        left:250px;
+
+    }
+
+    .anchor:visited{color:red}
+    .anchor:hover{color: green}
+    .anchor:active{color: blue}
+   
+   ol ~ p 
+   {
+     color:red;
+   }
+

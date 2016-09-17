@@ -1,0 +1,17 @@
+body{
+  background-image: url(wild.jpg);
+  background-repeat: no-repeat;
+ background-size: 1400px 680px;
+
+}
+h1{
+  color:red;
+
+}
+p{
+  color:pink;
+}
+
+table{
+  color:pink
+}

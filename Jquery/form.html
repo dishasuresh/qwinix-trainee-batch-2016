@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FORM</title>
+<style src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></style>
+ <style>
+
+  .myform
+  {
+     padding: 20px;
+
+   }
+  </style>
+ </head>
+ <body>
+
+ <button class="butt" onclick="func()">Show Form</button><br><br>
+ <div class="container">
+ <div class="row">
+  <div class="col-md-3">
+   <div class="col-md-6"> 
+   <form class="myform">
+
+    <label >Email address</label>
+    <input type="email" class="form-control"  placeholder="Email">
+  
+
+    <br><label>Password</label>
+    <input type="password" class="form-control"  placeholder="Password">
+
+
+  <br><button type="submit" class="">Submit</button><br>
+   </form>
+   </div>
+  </div>
+  </div></div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+
+      <script>
+         $('.myform').hide();
+          jQuery('.butt').click(function(){
+     	  $('.myform').show();
+     	});
+     	</script>
+ </body>
+ </html>

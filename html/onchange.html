@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>On change</title>
+
+ </head>
+  <body>
+  <h4> Select the vehicle</h4>
+  <p id="veh"><br></p>
+ 
+  <select id="mode" onchange="carFun()">
+  <option value="CAR">CAR</option>
+  <option value="BUS">BUS</option> 
+  <option value="TRAIN">TRAIN</option>
+  <option value="AUTO">AUTO</option>
+  </select><br><br>
+
+ <img onmouseover="bigImg(this)" onmouseout="smallImg(this)" src="img.jpg" alt="Img is loading" border="1" width="100px" height="100px">
+ <br><br>
+
+   Name:<input id="tex" type="text" onkeyup="upper()"></input><br>
+   Last name:<input id="ltex" type="text" onkeyup="lower()"/><br>
+
+   <script>
+   function carFun()
+    {
+      var c =document.getElementById("mode").value;
+      document.getElementById("veh").innerHTML="your selected:  " + c;
+    }
+ 
+    function bigImg(x)
+    {
+    	x.src="down.jpg"
+    }
+
+    function smallImg(x)
+    {
+    	x.src="img.jpg"
+    }
+
+    function upper()
+    {
+    	var v = document.getElementById("tex");
+    	v.value=v.value.toUpperCase();
+    }
+
+    function lower()
+    {
+    	var l = document.getElementById("ltex");
+    	l.value=l.value.toLowerCase();
+    }
+    
+  </script>
+
+
+
+   </body>
+ </html>
+  
+  

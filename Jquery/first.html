@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQUERY</title>
+ </head>
+ <body bgcolor="#CEC9B3">
+   
+   <div>Hello world!</div>
+   <div>Hello world!</div>
+   <div>Hello world!</div>
+
+   <div class="clic">JQuery</div>
+      <p>QWINIX</p> 
+    
+    <a href="#" class="link" target="new">Link1</a>
+    <a href="#">Link2</a>
+    <a href="#">Link3</a>
+    <a href="#" class="link">Link4</a>
+
+       <ol>
+        <li>First list</li>
+        <li>Second list</li>
+        <li>Third list</li>
+        <li>Forth list</li>
+      </ol>
+        <form>
+          <input type="checkbox" name="">
+          <input type="radio" name="">
+          <input type="text" name="">
+        </form>  
+
+        <form>
+        	<input type="checkbox" name="">
+        	<input type="radio" name="">
+        	<input type="text" name="">
+        </form>
+
+            <input type="checkbox" name="">
+        	<input type="radio" name="">
+        	<input type="text" name="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+       // alert(jQuery('p').text());
+       // alert('jQuery'+jQuery.fn.jquery);
+       // jQuery('p').hide();
+ 	   // jQuery('div').text('Hi Google!!!!!');
+ 	   // jQuery('div').addClass('updateContent');
+ 	   // jQuery('p').show(); 
+
+ 	   jQuery('div').hide().text('Hi Google!!!!').addClass("updateContent").show();
+
+ 	     // alert('page contains' + jQuery('a.link').length + '<a> Elements');
+           
+         // alert('page contains ' + jQuery(document.getElementsByTagName('a')).length + '<a> Elements, and has a ' 
+       	 // + jQuery(document.body).attr('bgcolor') + ' background');
+
+       	jQuery('a.link').attr('href','https://www.google.co.in/');
+
+
+       	alert($('ol li:first').text());
+        
+        alert(' selected  ' + jQuery('input',$('form')).length + ' input');
+
+        alert(' selected  ' + jQuery('input',document.forms[0]).length + ' inputs');
+
+        alert(' selected  ' + jQuery('input','body').length + ' input');
+
+        jQuery('div.clic').click(function())
+    </script> 
+    
+
+
+ </body>
+</html>

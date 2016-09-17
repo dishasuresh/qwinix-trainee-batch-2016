@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  
+  <div id="conta1" style="display:none"> Hello </div>
+  
+  <div id="conta2" style="display:none"> World </div>
+  
+  <div id="conta3" style="display:none"> Hello Google </div>
+
+   <button onclick="myFunction(1)">Try</button>
+   
+   <p id="demo"></p> 
+
+  <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+  <script>
+  function check() 
+  {
+    if (clicks==1) {
+        document.getElementById("conta1");
+    } 
+    else if(clicks==2) {
+        document.getElementById("conta2");
+    }
+    else 
+    {
+       document.getElementById("conta3");
+    }
+  }
+  </script>
+  
+   <script type="text/javascript">
+   	function myFunction(count)
+   	{
+   		for(count=0;count<=3;count++)
+   	   {
+      if(count==1) 
+      {
+      	document.getElementById('conta1').style.display="block";
+      	document.getElementById('conta2').style.display="none";
+      	document.getElementById('conta3').style.display="none";
+      }
+
+      else if(count==2)
+      {
+        document.getElementById('conta1').style.display="none";
+      	document.getElementById('conta2').style.display="block";
+      	document.getElementById('conta3').style.display="none";
+      }
+        
+       else
+      {
+         document.getElementById('conta1').style.display="none";
+      	document.getElementById('conta2').style.display="none";
+      	document.getElementById('conta3').style.display="block";
+      }
+     }
+   	}
+   </script>
+</body>
+</html>

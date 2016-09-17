@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQUERY</title>
+ </head>
+ <body>
+  <style type="text/css">
+  	
+  	.clas
+   {
+   	   color: red;
+	   padding: 15px;
+	   border: 5px solid red;
+     }
+
+  </style>
+    <h4>anchors</h4>
+    <a href="#">anchor1</a>
+    <a href="#">anchor2</a>
+    <a href="#" class="anch">anchor3</a><br><br>
+
+     <button class="hide" >Hide Text</button><br><br>
+
+     <button class="show" >Show Text</button>
+     <div class="div1">This is yellow line!!!</div><br>
+ 
+     <div class="div2">This is div element!!</div><br>
+
+     <button class="run">Run addClass method</button> <br><br>
+     
+     <div class="div3">
+      <p>Paragraph</p>
+      <p>Paragraph2</p>
+      </div><br><br>
+       
+       <button class="butt">ADD</button><br><br>
+        <p class="para">Content will insert!!  </p>
+      <ul>
+       <li class="cl1">List1</li>
+       <li>List2</li>
+       <li class="cl3">List3</li>
+       <li>LIst3</li>
+       </ul>
+
+     <ol>
+       <li class="remove">name</li>
+       <li>name</li>
+       <li class="remove">name</li>
+       <li class="remove">name</li>
+       <li>name</li>
+       <li class="remove">name</li>
+       <li>name</li>
+      </ol><br>
+        
+        <select class="selected">
+         <option value="green">Green</option>
+         <option value="blue">Blue</option>
+         <option value="red">Red</option>
+         <option value="black">Black</option>
+         <option value="white">White</option>
+        </select> <br><br>
+        
+         <button class="showval">Show the selected color</button><br><br>
+
+         <div class="stylespec" id="mouseevent">As mouse enters the background color will change</div>
+
+         <div id="one"></div>
+         <div id="two"></div>
+         <div id="three"></div>
+         <div id="four"></div>
+         <div id="five"></div>
+         <br><br>
+
+         <p class="pa"></p>
+          <style>
+          	.stylespec {
+          		padding: 20px;
+          		background-color: #93DCF7;
+          	}
+          </style>
+
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 	 <script type="text/javascript">
+
+     jQuery('.hide').click(function(){
+     	$('.div1').hide();
+     	$('show').show();
+     	$('.hide').hide();
+     });
+      
+      jQuery('.show').click(function(){
+     	$('.div1').show()
+     	$('.show').hide()
+     	$('.hide').show();
+     });
+
+       jQuery('.run').click(function(){
+         $('.div2').addClass("clas");
+       });
+     
+     // To apply fadeIn and fadeOut 
+     $(".div3").find("p").parent().addClass("background");
+     $(".div3").find("p").addBack().css('border','1px solid red');
+     $(".div3").find("p").fadeOut('100',function(){
+     	$(".div3").find("p").fadeIn('slow')
+     });
+
+      // To append text 
+     jQuery('<p><a>Jquery</a></p>').find('a').attr('href','http://www.jquery.com').end().appendTo('body');
+     jQuery('a').remove('.anch');
+        
+      $(".butt").click(function(){
+      	$(".para").append("  Inserted  ");
+      });
+
+      // To change the background color of list1 and list3
+
+      $('ul').find('.cl1').css('background-color','red').end().find('.cl3').css('background-color','green');
+
+      // To replace the content and class name
+     $('ol').find('li.remove').replaceWith('<li>removed</li>');
+      
+      // To display the selected color
+     
+      // $(document).ready(function()){
+      $('.showval').click(function()
+      {
+         alert($('.selected').val());
+         alert($('.selected').text());
+      });
+     // });
+      
+      // mouse events
+     $('#mouseevent').click(function(){
+     	$('#mouseevent').css('background-color','red');
+     });
+     
+     $('#mouseevent').hover(function(){
+     $('#mouseevent').css('background-color','green').text('mouse entered');
+     });
+
+     $('#mouseevent').mouseleave(function(){
+     	$('#mouseevent').css('background-color','pink').text('Mouse left');
+     });
+ 
+    // array and json
+     var arr = ["one","two","three","four","five"];
+     var obj = { one:1, two:2, three:3, four:4, five:5};
+
+     jQuery.each(arr, function(i,val){
+     	$('#' + val ).text("Mine is " + val +".");
+     	return(val !=="three");
+     });
+
+     jQuery.each(obj,function(i,val){
+     	$("#"+i).append(document.createTextNode(" - " +val));
+     });
+
+     // To write html code
+     jQuery('p.pa').html('<strong> Hello jQuery!!</strong> This is a <em> p </em> tag');
+     alert($('p.pa').html());
+
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Title</title>
+
+ </head>
+  <body>
+  
+   <button id="button" onclick="func()">click here to view profile details</button><br><br>
+
+   <div id="butt">
+    <span>Name:</span><span id="name"></span><br>
+    <span>Age:</span><span id="age"></span><br>
+    <span>Address:</span><span id="street"></span><br>
+    <span>City:</span><span id="city"></span>
+    </div>
+
+  <!-- <button onclick="showMess(1)">Show Message</button>
+   <script type="text/javascript">
+  	function showMess(count)
+  	{
+  		if (count == 1)
+  		{
+  			console.log('in');
+  		}
+  		else{
+  			console.log('out Greater than 1');
+  		}
+  		for(i=0;i<10;i++)
+  		{
+  			console.log(i);
+  		}
+  	}
+  </script>-->
+
+ <script>
+   var data = {
+       "name" : "QWERTY", "age" :"23", 
+       "address" : {
+         "street" : "1st main ",
+         "city" : "Mysore" 
+       }
+   }
+   console.log(data.name);
+   console.log(data.age);
+   console.log(data.address.city);
+
+  document.getElementById('butt').style.display="none";
+
+   function func()
+   {
+   	 
+      document.getElementById('name').innerHTML=data.name;
+      document.getElementById('age').innerHTML=data.age;
+      document.getElementById('street').innerHTML=data.address.street;
+      document.getElementById('city').innerHTML=data.address.city;
+      document.getElementById('butt').style.display="block";
+       document.getElementById('button').style.display="none";
+    }
+
+</script>
+  </body>
+  </html>
