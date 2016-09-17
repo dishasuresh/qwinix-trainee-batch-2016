@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+
+<body>
+
+
+	<ol
+		<li>first item</li>
+		<li>second item</li>
+		<li>third item</li>
+		<li>fourth item</li>
+	</ol>
+ <!-- <table> -->
+	 <!-- <tr><td>0</td><td>even</td> -->
+		 <!-- <tr><td>1</td><td>odd</td> -->
+	<!-- <tr><td>2</td><td>even</td> -->
+	 <!-- <tr><td>3</td><td>odd</td> -->
+	 <!-- <tr><td>4</td><td>even</td> -->
+
+<!-- </table> -->
+
+<form>
+	<input name="" type="checkbox"/>
+		<input name="" type="radio"/>
+	<input name="" type="button"/>
+	<input name="" type="box"/>
+</form>
+	
+	<form>
+	<input name="" type="checkbox"/>
+		<input name="" type="radio"/>
+	<input name="" type="button"/>
+	<input name="" type="box"/>
+</form>
+
+		<input name="" type="radio"/>
+	<input name="" type="button"/>
+	<input name="" type="box"/>
+<div>click here</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/JavaScript">
+	jQuery('ol list:first');
+
+	jQuery(document).ready(function($){
+		alert($('p').text());
+	});
+
+	alert('selected' + jQuery('input',$('form')).length + 'inputs');
+		alert('selected' + jQuery('input',document.forms[0]).length + 'inputs');
+			alert('selected' + jQuery('input','body').length + 'inputs');
+
+jQuery('div').click(function () {
+	jQuery('div').css('background-color','blue');
+});
+
+
+	</script>
+	<p> DOM is ready </p>
+
+</body>
+</html>

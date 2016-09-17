@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>
+<!-- <p>cavgdfaf<em>sgdyutasut</em>asgbdygauyd</p> -->
+<p>asghdfyyfysgyduyus</p>
+<p>paragraph</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/JavaScript">
+// alert('the '+ jQuery('P').length + 'paragraphs in all contain '+ jQuery('p').find('em').length+'italic words');
+// alert(jQuery('em',jQuery('p')).length);
+
+jQuery("div").find("p").parent().addClass("background");
+jQuery("div").find('p').addBack().css('border','1px solid blue');
+jQuery('div').find('p').fadeOut('slow',function() {
+	jQuery('div').find('p').fadeIn('slow');
+	// body...
+});
+
+</script>
+</body>
+</html>

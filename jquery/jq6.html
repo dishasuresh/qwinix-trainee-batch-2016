@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button>add content<button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/JavaScript">
+jQuery('button').click(function() {
+	jQuery('<p>paragraph where coment will insert! <a>jQuery</a></p>').find('a').attr('href','http://www.jQuery.com').end().appendTo('body');
+});
+
+</script>
+
+</body>
+</html>

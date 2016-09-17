@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul>
+<li class="remove" > name</li>
+<li>name</li>
+<li class="remove1" > name</li>
+<li class="remove" > name</li>
+<li>name</li>
+
+<li class="remove2" > name</li>
+
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/JavaScript">
+jQuery('.remove1').css('background-color','yellow');
+jQuery('.remove2').css('background-color','teal');
+
+
+jQuery(".remove").replaceWith('<li>removed</li>');
+</script>
+</body>
+</html>
