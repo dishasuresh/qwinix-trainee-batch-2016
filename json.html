@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="show()">click</button>
+
+	<div id="1"></div>
+	<div id='2'></div>
+	<div id='3'></div>
+<script type="text/javascript">
+function show(){
+	var data={
+		"name": "Suhas",
+		"age":"21",
+		"address":{
+			"street": "6th cross",
+			"landmark": "ncasknv",
+			"city": "mysore"
+		}
+	}
+	document.getElementById('1').innerHTML="Name: "+data.name;
+	document.getElementById('2').innerHTML="add line 1: "+data.address.street;
+	document.getElementById('3').innerHTML="add line 2: "+data.address.landmark;
+}
+</script>
+
+</body>
+</html>

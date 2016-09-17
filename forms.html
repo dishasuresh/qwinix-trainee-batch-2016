@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form id='f'>
+	First Name:<input type="Text" id="text1"></br>
+	Last Name:<input type="Text" id="text2"></br>
+	<select id="text3">
+  <option >Select</option>
+  <option value="volvo">Volvo </option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+	
+
+</form>
+<input type="submit" value="submit" onclick="disp()" id='i'>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+<!-- <select id="mySelect" onchange="myFunction()"> -->
+	
+<!-- </select> -->
+<script type="text/javascript">
+function disp(){
+	var a=document.getElementById('text1').value;
+	var b=document.getElementById('text2').value;
+	var c=document.getElementById('text3').value;
+
+	document.getElementById('line1').innerHTML="First Name:"+a;
+	document.getElementById('line2').innerHTML="Last Name:"+b;
+	document.getElementById('line3').innerHTML="Your car:"+c;
+
+	document.getElementById('f').style.display='none';
+	document.getElementById('i').style.display='none';
+	document.getElementById('text3').style.display='none';
+}	
+</script>
+
+</body>
+</html>

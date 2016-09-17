@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="mouse">A quick brown fox 	 jumps over the lazy dog</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#mouse").click(function(){
+		$("#mouse").css('background-color','red');
+	});
+	$("#mouse").mouseleave(function(){
+		$("#mouse").css('text-align','right');
+	});
+	$("#mouse").mouseenter(function(){
+		$("#mouse").css('background-color','blue');
+	});
+</script>
+</body>
+</html>

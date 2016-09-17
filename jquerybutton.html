@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<select id="sel">
+	<option value="red">Red</option>
+	<option value="blue">Blue</option>
+	<option value="green">Green</option>
+	<option value="black">Black</option>
+</select>
+
+<button id="button">Color Selected</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$('button').click(function(){
+		alert($("#sel").val());
+		alert($("#sel").text());
+		alert($("#sel:selected").text());
+	});
+</script>
+
+</body>
+</html>

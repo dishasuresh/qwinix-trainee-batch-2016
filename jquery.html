@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<title></title>
+	<head></head>
+	<body bgcolor="yellow">
+	<a href="#">link</a>
+	<a href="#" class="class1">link</a>
+	<a href="#">link</a>
+	<a href="#" class="class1">link</a>
+	<a href="#">link</a>
+	<a href="#">link</a>
+		<div>Hello</div>
+		<div>Hey</div>
+		<div>3rd div</div>
+		<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+		<script type="text/JavaScript">
+		alert('Page contains' + jQuery('a.class1').length + '<a> elements');
+		alert('Page contains' + jQuery(document.getElementsByTagName('a.class1')).length + '<a> elements, And has a'+jQuery(document.body).attr('bgcolor')+'background');
+		jQuery('a.class1').attr('href','https://www.google.com').attr('target','_blank').attr('link','red');
+		    // jQuery('div').hide();
+			// jQuery('div').text('suhas');
+			// jQuery('div').addClass("updatedContent");
+			// jQuery('div').hide().text('suhas').addClass("updatedContent").show();
+			// jQuery('div')
+			// .hide()
+			// .text('suhas')
+			// .addClass("updatedContent")
+			// .show()
+
+		</script>
+
+	</body>
+</html>
