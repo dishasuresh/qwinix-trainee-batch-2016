@@ -1,0 +1,27 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="hidetext" onclick="myfunction()">hide text</button>
+<button id="showtext" onclick="newfunction()" style="display:none">show text</button>
+<div id="text" style="background-color:yellow">this is yellow</div>
+<script type="text/javascript">
+	function myfunction()
+	{
+		document.getElementById('text').style.display="none";
+		document.getElementById('hidetext').style.display="none";
+		document.getElementById('showtext').style.display="block";
+
+	}
+	function newfunction()
+	{
+		document.getElementById('text').style.display="block";
+		document.getElementById('hidetext').style.display="block";
+		document.getElementById('showtext').style.display="none";
+	}
+</script>
+</body>
+</html>

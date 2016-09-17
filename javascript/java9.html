@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>onchange</title>
+</head>
+<body>
+
+	<h1>select one option</h1>
+
+
+
+<select id="mySelect" onchange="myfunction()">
+
+	<option value="audi">audi</option>
+	<option value="BMW">BMW</option>
+	<option value="swift">swift</option>
+	<option value="fortuner">fortuner</option>
+
+</select>
+<p>when you change the new car,a function is triggered which outputs the value you selected</p>
+<p id="demo"></p>
+<p class="class">one</p>
+<p class="class">two</p>
+<p class="class">three</p>
+<button onclick="myFN()"> BTN</button>
+<script>	
+	function myFN(){
+		for (var i = 0; i < document.getElementsByClassName("class").length; i++) {
+			
+		console.log(document.getElementsByClassName("class")[i].innerHTML)
+		}
+	}
+	function myfunction()
+	{
+		var x=document.getElementById("mySelect").value;
+		console.log(x);
+		document.getElementById("demo").innerHTML="you selected:" +x;
+
+
+	}
+</script>
+</body>
+</html>

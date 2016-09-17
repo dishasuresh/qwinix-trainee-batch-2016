@@ -1,0 +1,20 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>anchor tags</h2>
+<a href="#">google</a>
+<a href="#">yahoo</a>
+<a href="#" class="remove">opera</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery('<p><a>jQuery</a></p>').find('a').attr('href','http://www.jQuery.com').end().appendTo('body');
+	jQuery('a').remove('.remove');
+	
+</script>
+</body>
+</html>

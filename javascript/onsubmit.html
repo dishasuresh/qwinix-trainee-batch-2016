@@ -1,0 +1,32 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<form id="demo">
+	<label>First name</label>
+	<input type="text" name="fname"><br>
+	<label>Last name</label>
+	<input type="text" name="lname"><br>
+	<label>Age</label>
+	<input type="text" name="age"><br>
+	<label>company</label>
+	<input type="text" name="company"><br>
+	</form>
+	<button id="button" onclick="myfunction()">click me</button>
+<script type="text/javascript">
+	function myfunction() 
+	{
+
+		var x = document.getElementById('demo').value;
+		document.getElementById('button').innerHTML = x.value;
+
+
+
+	}
+</script>
+<body>
+
+</body>
+</html>

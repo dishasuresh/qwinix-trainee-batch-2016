@@ -1,0 +1,27 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="button" onclick="myfun()">click me</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script type="text/javascript">
+	var data={
+		"name":"sushmitha",
+		"age":"23",
+		"place":"mysore"
+	}
+	function myfun()
+	{
+		document.getElementById('demo1').innerHTML=data.name;
+		document.getElementById('demo2').innerHTML=data.age;
+		document.getElementById('demo3').innerHTML=data.place;
+	}
+</script>
+
+</body>
+</html>

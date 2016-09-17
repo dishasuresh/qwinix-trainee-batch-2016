@@ -1,0 +1,35 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#mouseover').click(function(){
+			$('#mouseover').css('background-color','red');
+			$('#mouseover').css('font-style','italic');
+		});
+	$('#mouseover').hover(function(){
+			$('#mouseover').css('background-color','green');
+			$('#mouseover').css('font-size','50px');
+		});
+$('#mouseover').mouseleave(function(){
+			$('#mouseover').css('background-color','blue');
+			$('#mouseover').css('font-size','20px');
+		});
+});
+
+	
+
+</script>
+<p class="change" id="mouseover">JavaScript is the programming language of HTML and the Web.Programming makes computers do what you want them to do.JavaScript is easy to learn.this tutorial will teach you JavaScript from basic to advanced.
+</p>
+</body>
+</html>
+
+	

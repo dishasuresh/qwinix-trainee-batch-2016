@@ -1,0 +1,15 @@
+.row{
+	margin-left: -10px;
+	margin-right: -10px;
+
+}
+.col{
+	width: 30%;
+	float: left;
+
+}
+nav{
+	float: right;
+	margin-top: 20px;
+
+}

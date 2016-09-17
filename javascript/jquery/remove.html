@@ -1,0 +1,21 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul>
+<li class="remove1">name</li>
+<li>name</li>
+<li class="remove2">name</li>
+<li>name</li>
+<li class="remove3">name</li>
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+$('ul').find('.remove1').css('background-color','red').end().find('.remove3').css('background-color' ,'green');
+	jQuery('li.remove1').replaceWith('<li>remove</li>');
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+.id1{
+	color: white;
+	text-align: left;
+	font-family: cursive;
+
+}
+
+.id1:visited{color: white;}
+.id1:hover{color:red;opacity: 1;}
+.id1:active{color: blue;}
+.id2{
+	color: red;
+	font-family: cursive;
+
+}
+.id3{
+	color:white;
+	font-family:cursive;
+	font-style:bold;
+	text-align: left;
+}
+input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+   
+
+ 
+    padding: 12px 20px 12px 40px;
+}
+	
+	.id4{
+		color: white;
+		font-size: 20px;
+		text-decoration: underline;
+
+	}
+.id5{
+	font-style: bold;
+}
+li{
+			display: inline;
+			font-family: cursive;
+			font-size: 30px;
+			text-align: center;
+			color: white;
+			background-color: black;
+		}
+		.id6{
+			color: blue;
+			font-size: 20px;
+			font-family: cursive;
+
+		}
+		.id7{
+			font-style: cursive;
+			font-size: 30px;
+			border-bottom: 3px solid #ff571e;
+		}
+		.id8{
+			font-size: 20px;
+			font-family: cursive;
+
+		}
+		.id9{
+			font-style: bold;
+			font-family: cursive;
+			font-size: 20px;
+			text-decoration: underline;
+			color: blue;
+		}
+		.id10{
+			font-family: cursive;
+			
+		}
+		.id11{
+			font-family: cursive;
+			font-style: bold;
+		}
+		.id12{
+			font-family: cursive;
+			font-size: 20px;
+		}
+		.button{
+			 background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    
+   
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+		}
+		.id13{
+			font-family: cursive;
+			font-size: 15px;
+		}
+		#myselect1{
+			font-family: cursive;
+			font-size: 20px;
+			color: white;
+			background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: underline;
+ display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+
+		}
+.id20{
+	font-family: cursive;
+	text-decoration: underline;
+	color: blue;
+}
+.id21{
+	font-family: cursive;
+	text-decoration: underline;
+	font-size: 30px;
+	color:black;
+}
+#myid1{
+	background-color:red;text-align: center;
+}
+.id32{
+	color: red;
+	font-family: cursive;
+	text-align: center;
+	text-decoration: underline;
+
+
+}
+input[type=text2]{
+	
+    margin: 4px 0;
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+   
+}
+.id34{
+	text-align: left;
+	font-family: cursive;
+	font-size: 30px;
+	color: blue;
+	display: inline;
+}

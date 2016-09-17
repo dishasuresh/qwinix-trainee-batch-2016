@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+</head>
+<body bgcolor="pink">
+<div>old content</div>
+<div>old content</div>
+<div>old content</div>
+<div>old content</div>
+<a href="#" class="link">link1</a>
+<a href="#" class="link">link2</a>
+<a href="#" class="link">link3</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+	//jQuery('div').hide();
+	alert('page contains' +jQuery('a').length + '<a> elements!');
+	//alert('page contains' +jQuery(document.getElementByTagName('a')).length + '<a> elements, and has a ' +jQuery(document.body).attr('bgcolor')+ 'background');
+	jQuery('a.link').attr('href',"www.google.com");
+	jQuery('div').text('new content');
+	alert(jQuery.fn.jquery);
+	jQuery('div').addClass('updatedcontent');
+	jQuery('div').hide().text('newcontent').addClass('updatedcontent').show();
+</script>
+
+
+</body>
+</html>
