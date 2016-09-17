@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Heritage City</title>
+ <link  rel="stylesheet" type="text/css" href="mystyle.css">
+
+ </head>
+
+ <div id="class1">
+ <body bgcolor="Azure">
+ <marquee direction="left"><h1>Welcome to Our Heritage city Mysore !!!</h1></marquee></br>
+ </div></br>
+<div id="class2">
+ <NAV>
+	<a href="Home.html">Home</a> |
+	<a href="History.html">History</a> |
+	<a href="Picture Gallery.html">Picture Gallery</a> |
+	<a href="Hotels.html">Hotels</a> |
+	<a href="contact Us.html">Contact Us</a>
+</NAV>
+</div>
+<div >
+<table class="img1"  border="1">
+<tr>
+<th id="content1"><h2 >Features</h2></th>
+<th id="content1"><h2>Mysore</h2></th>
+</tr>
+
+<tr>
+<td id="content2"> <a href="http://aboutmysore.com" class="anchor">About Mysore</td>
+<td ><img  class="img1" src="palace2.jpg"  alt="alternate text"  /></br></br>
+<p class="class3">Known as the 'Sandalwood City of India',
+the city of Mysore presents a host of spectacular tourists attractions that can be visited by the tourists during</br>
+ their vacation in the old city of the state of Karnataka.Once the administrative capital of the Wodeyar dynasty,the city of Mysore still retains the old world</br>
+  charm in the shadowed alleys and thoroughfares.The temples, magnificent palaces and luxuriant gardens are the chief Mysore 
+tourist attractions that are frequently </br>
+ visited by the tourists. 
+</p></td>
+</tr>
+<tr>
+<td id="content2"> <a href="http://ChamumdeshwariTemple.com" class="anchor">Temples</br></td>
+</tr>&nbsp;&nbsp;
+<tr>
+<td id="content2"><a href="http://mysorepalace.com" class="anchor">Palace</td>
+</tr></br>
+
+<tr>
+<td id="content2"><a href="http://mysorezoo.com" class="anchor">Zoo</td>
+</tr>
+
+<tr>
+<td id="content2"><a href="http://brindavangarden.com" class="anchor">Brindavan Garden</td>
+</tr>
+
+<tr>
+<td id="content2"><a href="http://railwaymuseum.com" class="anchor">Museum</td>
+</tr>
+<tr>
+<td id="content2"><a href="http://mysorehotels.com" class="anchor">Hotels</td>
+</tr>
+
+</table>
+
+</div></br></br>
+    
+    
+  <h3 align="center">@Copyrights 2016 All Rights Reserved</h3>
+ </body>
+</html>

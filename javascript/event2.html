@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select a state</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="karnataka">karnataka
+  <option value="kerala">kerala
+  <option value="orissa">orissa
+  <option value="goa">goa
+</select>
+
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+</body>
+</html>

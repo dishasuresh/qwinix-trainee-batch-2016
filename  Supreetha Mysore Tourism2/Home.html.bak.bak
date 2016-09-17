@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+ <head>
+  
+ 
+  <title>Heritage City</title>
+ </head>
+ <body>
+ <TABLE  BORDER="0" VSPACE="0" HSPACE="0" CELLPADDING="0" 
+    CELLSPACING="0" ALIGN="CENTER" class="tbl">
+      <TR>
+        <TD COLSPAN="3" BACKGROUND="/gifs/bg1.jpg">
+        <MAP NAME="map1">
+        <AREA SHAPE="RECT" COORDS="0,4,235,89" HREF="/index.html" ALT="Mysore">
+        </MAP><IMG SRC="maharaja-palace.jpg" ALT="Maharaja Palace, Mysore" WIDTH="387" HEIGHT="185" BORDER="0"><IMG SRC="church-in-mysore.jpg" ALT="Church in Mysore" WIDTH="189" HEIGHT="185" BORDER="0"><IMG SRC="temple-in-mysore.jpg" ALT="Temple in Mysore" WIDTH="202" HEIGHT="185" BORDER="0"><BR>
+        <IMG SRC="mysore-palace-india.jpg" ALT="Mysore Palace" WIDTH="173" HEIGHT="102" BORDER="0"><IMG SRC="mysore.jpg" ALT="Mysore" WIDTH="236" HEIGHT="102" BORDER="0" USEMAP="#map1"><IMG SRC="mysore-city-of-palaces.jpg" ALT="Mysore - City of Palaces" WIDTH="344" HEIGHT="102" BORDER="0"><IMG SRC="1-top.jpg" WIDTH="25" HEIGHT="102" BORDER="0"></TD>
+      </TR>
+    </TABLE>
+    
+
+  
+ </body>
+</html>

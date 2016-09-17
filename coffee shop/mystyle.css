@@ -1,0 +1,64 @@
+
+
+h1{color:black;
+
+}  
+
+
+	
+#info{font-size: 40px;
+	text-align:center;
+	color:red;
+font-variant: normal;
+font-weight: bolder;
+font-stretch: semi-expanded;}
+
+
+.h-light{font-style: italic;
+	letter-spacing: 4px;
+word-spacing: 8px;
+text-indent: 1cm;
+text-shadow: 4px,4px,8px,red;}
+
+div > h2{color:black;
+	text-align: left;
+}
+
+body > div{font-style: italic;
+text-align: right;
+}
+
+
+h2{text-align: justify;
+white-space: pre-wrap;}
+
+#set{
+	text-decoration: underline;
+	text-transform: uppercase;
+	white-space: initial;
+	padding: 
+
+}
+
+#content{margin: 10px 11px 13px 14px;
+padding:12px 13px 15px 14px;}
+
+.img{
+	border: 10px solid red;
+	margin: 10px 13px 11px 14px;
+	padding: 12px 13px 15px 14px;
+    position: relative;
+    left: 100px;
+    top:500px;
+
+}
+.anchor:visited {color:green;opacity:.8;}
+
+.anchor:hover {color:red;opacity:.8;}
+
+
+.anchor:active {color:blue;opacity: 1;}
+
+ul ~ p{color: red;}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<form>
+<label>First name:</label><input id="fname" type="text" /></br></br>
+<label>Last name:</label><input id="lname" type="text" /></br></br>
+<label>Age</label>
+<select id="age">
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+</select></br></br>
+
+<label>Company name:</label><input id="cname" type="text" /></br></br>
+<label>Designation:</label><input id="desig" type="text" /></br>
+
+</form>
+<!-- <input type="submit" /> -->
+
+<button onclick="myFunction()">submit</button>
+
+
+<p id="demo"></p>
+<script type="text/javascript">
+
+function myFunction(){
+	var x=document.getElementById("fname").value;
+// document.getElementById("demo").innerHTML=  x;
+
+var y=document.getElementById("lname").value;
+
+
+ var z=document.getElementById("age").value;
+ var a=document.getElementById("cname").value;
+ var b=document.getElementById("desig").value;
+
+document.getElementById("demo").innerHTML= x + y+ z+ a+ b;
+}
+
+</script>
+
+
+</body>
+</html>

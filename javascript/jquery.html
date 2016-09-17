@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div>old content</div>
+<div>old content</div>
+<div>new content</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+
+jQuery('div').text('new content');
+alert('jQuery'+jQuery.fn.jquery);
+jQuery('div').hide('new content');
+jQuery('div').addClass("updatedContent");
+jQuery('div').show();
+
+jQuery('div').hide().text('new content').addClass("updatedContent").show();
+
+jQuery('div')
+.hide()
+.text('new content')
+.addClass("updatedContent")
+.show();
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h2>anchors</h2>
+<a href="#">anchor element</a>
+<a href="#" class="remove">anchor element</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery('<p><a>jQuery</a></p>').find('a').attr('href','http://www.jquery.com').end().appendTo('body');
+
+ jQuery('a').remove('.remove');
+ jQuery('a').removeAttr('href');
+</script>
+
+</body>
+</html>

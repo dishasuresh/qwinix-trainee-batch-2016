@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>
+<p>this <b>is</b> paragraph</p>
+<p>this <b>is</b> second paragraph</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+$('div').find("p").parent().addClass("container1");
+$('div').find('p').find('b').addBack().css('border','1px solid red ');
+$('div').find('p').fadeout('100',function(){
+	$('div').find('p').fadeIn('slow')
+});
+</script>
+
+</body>
+</html>
