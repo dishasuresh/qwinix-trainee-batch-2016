@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>
+	<p>para</p>
+	<p>paragraph</p>
+</div>
+<a href="#">Anchor1</a>
+<a href="#">Anchor2</a>
+<a href="#" class="rem">Anchor3</a>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"> </script>
+
+<script type="text/javascript">
+		$("div").find("p").parent().addClass("background");
+		$('div').find('p').addBack().css('border', '1px solid red');
+		$('div').find('p').fadeOut('10000', function()
+		{
+			$('div').find('p').fadeIn('slow');
+		});
+
+		jQuery('<p><a>jQ</a></p>').find('a').attr('href','https://www.google.com').end().appendTo('body');
+
+		jQuery('a').remove('.rem');
+		//jQuery('a').removeAttr('href');
+</script>
+</body>
+</html>

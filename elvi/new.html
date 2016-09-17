@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<button id="hideT" onclick="hide()">Hide this</button>
+<button id="showT" onclick="show()" style="display:none">Show This</button>
+<br>
+<div id="text" style="display:block">
+	This is to be hidden
+</div>
+
+<form>
+Name:	<input id="name" type="text" ><br>
+Designation:	<input id="desig" type="text" ><br>
+Select:
+<select id="mySelect">
+	<option value="Audi">Audi</option>
+	<option value="Benz">Benz</option>
+	<option value="BMW">BMW</option>
+</select>
+</form>
+<button onclick="getInfo()">submit</button>
+<p id="nam"></p>
+<p id="des"></p>
+<p id="sel"></p>
+
+<script type="text/javascript" src='newjav.js'></script>
+<script type="text/javascript">
+	var a=3;
+	var b=4;
+	var c= mul(a,b)
+	function mul(a,b)
+	{
+		return a*b;
+	}
+	document.write(c);
+
+ function hide()
+ {
+ 	document.getElementById('showT').style.display= 'block';
+ 	document.getElementById('text').style.display='none';
+ 	document.getElementById('hideT').style.display= 'none';
+
+ }
+ function show()
+ {
+ 	document.getElementById('hideT').style.display='none';
+ 	document.getElementById('text').style.display='block';
+
+ }
+
+ function getInfo()
+ {
+ 	var x=document.getElementById('name').value;
+ 	document.getElementById('nam').innerHTML='Name:'+x;
+ 	var y=document.getElementById('desig').value;
+ 	document.getElementById('des').innerHTML='Designation:'+y;
+ 	var z=document.getElementById('mySelect').value;
+ 	document.getElementById('sel').innerHTML='You selected '+z;
+ }
+
+</script>
+</body>
+</html>

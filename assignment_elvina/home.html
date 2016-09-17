@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Travels
+	</title>
+	<link rel="stylesheet" type="text/css" href="travel.css">
+	<script type="text/javascript">
+		function hlight(x)
+		{
+			x.style.height="40px";
+			x.style.width="40px";
+			x.style.border="solid";
+			x.style.color="#2196F3";
+		}
+		function back(x)
+		{
+			x.style.height="30px";
+			x.style.width="30px";
+			x.style.border="none";
+			x.style.color="none";
+		}
+	</script>
+</head>
+<body>
+<style type="text/css">
+	body { 
+  			background-image: url("home1.jpg");
+  			background-repeat: no-repeat;
+  			background-size: cover;
+		}
+</style>
+	<h2>Book Amazing Transportation Deals</h2>
+	<img src="1.gif" height="400" width="1300" />
+	<nav id="menuTag">
+		<ul>
+  		<li class="current-menu-item"><a href="home.html">Home</a></li>
+  		<li><a href="revw.html">View Reviews</a></li>
+  		<li><a href="cont.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<br/><br/>
+	<h3>Select your destination</h3>
+	<form>
+		From
+		<select style="margin-right:142px;margin-left: 58px;">
+			<option>~Select~</option>
+			<option>Banglore</option>
+			<option>Mysore</option>
+			<option>Pune</option>
+			<option>Delhi</option>
+			<option>Maharashtra</option>
+			<option>Hyderabad</option>
+		</select>
+		To 
+		<select style="margin-left: 75px;">
+			<option>~Select~</option>
+			<option>Banglore</option>
+			<option>Mysore</option>
+			<option>Pune</option>
+			<option>Delhi</option>
+			<option>Maharashtra</option>
+			<option>Hyderabad</option>
+			<option>Goa</option>
+		</select>
+		<br>
+		Checkin date<input type="number" name="in" value="1" max="31" style="
+        margin-top: 25px;margin-left: 12px; margin-right: 67px;">
+		Checkout date <input type="number" name="out" value="1" max="31">
+		<br>
+		Month of travel
+		<select style="margin-top:20px;margin-left: 2px;">
+			<option>September 2016</option>
+			<option>October 2016</option>
+			<option>November 2016</option>
+			<option>December 2016</option>
+			<option>January 2017</option>
+			<option>February 2017</option>
+			<option>Goa</option>
+		</select>
+		</form>
+	<h3 style="
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 750px;">How would you like to travel</h3>
+	
+	<a href="taxi.html"><img onmouseover="hlight(this)" onmouseout="back(this)" src="4.png" height="30" width="30" style="
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 750px;"></a>
+	<a href="bbus.html"><img onmouseover="hlight(this)" onmouseout="back(this)" src="5.png" height="30" width="30" style="
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 840px;"></a>
+	<a href="train.html"><img  onmouseover="hlight(this)" onmouseout="back(this)" src="6.png"  height="30" width="30" style="
+    position: absolute;
+    margin-top: -73px;
+    margin-left: 750px;"></a>
+	<a href="plane.html"><img  onmouseover="hlight(this)" onmouseout="back(this)" src="10.png" height="30" width="30" style="
+    position: absolute;
+    margin-top: -72px;
+    margin-left: 840px;"></a>
+    <h3>Top Travel Destinations</h3>
+    <marquee>
+    <img src="b.jpg" height="250" width="250" alt="banglore palace" style="padding-right:17px";>
+    <img src="m.jpg" height="250" width="250" style="padding-right:17px";>
+    <img src="p.jpg" height="250" width="250" style="padding-right:17px";>
+    <img src="d.jpg" height="250" width="250" style="padding-right:17px";>
+    <img src="g.jpg" height="250" width="250" style="padding-right:17px";>
+    </marquee>
+    </body>
+</html>

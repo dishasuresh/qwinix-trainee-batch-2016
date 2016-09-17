@@ -1,0 +1,83 @@
+
+*{
+	background: coral;
+ }
+h1 {
+	color: red;
+	text-align: center;
+   }
+
+ul ~ p {
+	  font-size: 30px;
+	  color: green;
+	  }
+.h-light{
+	background: yellow;
+}
+ #para{
+ 	font-weight: bold;
+ 	text-align: center;
+ }
+ div > h1{
+ 	color: yellow;
+ }
+ h2{
+ 	text-align: left;
+ 	font-size: 25px;
+ 	text-align: right;
+ 	letter-spacing: 8px;
+ 	word-spacing: 5px;
+ 	color: violet;
+ 	text-indent: 8cm;
+ 	text-decoration-color: blue;
+ 	text-decoration: underline;
+  }
+
+  p{
+  	text-transform: uppercase;
+  	white-space: pre;
+  	text-shadow: 4px 5px 6px green;
+  }
+
+  h3{
+  	font-style: italic;
+  	color: red;
+  	font-weight: 100;
+  	font-variant: small-caps;
+  	font-family: sans-serif;
+  }
+
+  	
+  h4{
+  	margin-left: 30px;
+  	padding: 10px;
+	}
+
+	.img-c {
+		border: 1px solid red;
+		margin-left: 18px;
+		padding: 20px;
+	}
+
+	#imag {
+		border: 2px solid black;
+		padding: 20px;
+		position: relative;
+		top: 500;
+		left: 200;
+		background: orange;
+	}
+
+	.anchor{
+		margin-left: 15pt;
+		font-size: 20px;
+	}
+	.anchor:visited {
+					color: red;
+					}
+	.anchor:hover {
+					color: green;
+					}
+	.anchor:active {
+					color: blue;
+					}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="tform">
+		Name:	<input id="name" type="text" ><br>
+		Designation:	<input id="desig" type="text" ><br>
+		Age:<input id="Age" type="number" ><br>
+		Select:
+		<select id="mySelect" onchange="change()">
+			<option value="Audi">Audi</option>
+			<option value="Benz">Benz</option>
+			<option value="BMW">BMW</option>
+			<option value="volvo">Volvo</option>
+		</select>
+	</form>
+<button id="sbutton" onclick="getInfo()">submit</button>
+<p id="nam"></p>
+<p id="des"></p>
+<p id="sel"></p>
+<p id="age" ></p>
+
+<script type="text/javascript">
+ function getInfo()
+ 	{
+ 	//document.getElementById('tform').style.display='none';
+ 	//document.getElementById('sbutton').style.display='none';
+ 	var w=document.getElementById('name').value;
+ 	document.getElementById('nam').innerHTML='Name:'+w;
+ 	var x=document.getElementById('desig').value;
+ 	document.getElementById('des').innerHTML='Designation:'+x;
+ 	var y=document.getElementById('Age').value;
+ 	document.getElementById('age').innerHTML='Name:'+y;
+ }
+  function change()
+  {
+ 	var z=document.getElementById('mySelect').value;	
+ 	document.getElementById('sel').innerHTML='You selected '+z;
+	 }
+</script>
+</body>
+</html>

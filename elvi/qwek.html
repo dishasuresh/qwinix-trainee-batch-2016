@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>red</title>
+</head>
+<body>
+	<div id="container1" style="display:none">
+	Hello
+	</div>
+	<div id="container2" style="display:none">
+	Everyone
+	</div>
+	<div id="container3" style="display:none">
+	Whatsup
+	</div>
+	<button onclick="myFunction(count++)">Try</button>
+
+	<p id="demo"></p>
+
+	<img onmouseover="bigimg(this)" onmouseout="smallimg(this)" src="2.jpg" height="50" width="50" />
+
+	<script type="text/javascript">
+	var count=0;
+		function myFunction(count)
+		{
+			count++;
+	
+			if (count==1){
+				document.getElementById('container1').style.display = "block";
+				document.getElementById('container2').style.display = "none";
+				document.getElementById('container3').style.display = "none";}
+			else if (count==2){
+				document.getElementById('container1').style.display = "none";
+				document.getElementById('container2').style.display = "block";
+				document.getElementById('container3').style.display = "none";}
+			else{
+				document.getElementById('container1').style.display = "none";
+				document.getElementById('container2').style.display = "none";
+				document.getElementById('container3').style.display = "block";
+			}
+		}
+
+		var text = "";
+		var i;
+		for (i = 0; i < 5; i++) 
+		{
+    		text += " number is " + i + "<br>";
+    	}
+	document.getElementById("demo").innerHTML = text;
+
+	function bigimg(x)
+	{
+		x.style.height= 200px;
+		x.style.width= 200px;
+	}
+	function smallimg(x)
+	{
+		x.style.height= 50px;
+		x.style.width= 50px;
+	}
+
+</script>
+</body>
+</html>

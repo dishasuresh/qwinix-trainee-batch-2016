@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plane</title>
+	<link rel="stylesheet" type="text/css" href="travel.css">
+<body>
+<style type="text/css">
+	body { 
+  			background-image: url("plane.jpg");
+  			background-repeat: no-repeat;
+  			background-size: cover;
+		}
+		</style>
+	<h3>You have selected to travel by a plane</h3>
+	Make a choice:
+  <button>Show offers</button>
+</head>
+<form>
+<table border="1px">
+  <tr>
+    <th>Vehicle Type</th>
+    <th>Duration</th>
+    <th>Min Km/day</th>
+  </tr>
+  <tr>
+    <td><input type="radio" name="a">IndiGo</td>
+    <td>1h 40m</td>
+    <td>2031</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="a">Spicejet</td>
+    <td>1h 20m</td>
+    <td>2410</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="a">GoAir</td>
+    <td>1h 40m</td>
+    <td>2580</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="a">JetAirways</td>
+    <td>1h 15m
+    <td>2795</td>
+  </tr>
+</table>
+
+<div>
+<table style="
+    margin-left: 422px;
+    margin-top: -121px;">
+    <th>Offers</th>
+  </tr>
+  <tr>
+    <td>30%</td>
+  </tr>
+  <tr>
+    <td>25%</td>
+  </tr>
+  <tr>
+    <td>33%</td>
+  </tr>
+  <tr>
+    <td>-</td>
+  </tr>
+  </table>
+</div>
+
+<br>
+	<h3>Make a payment</h3><br>
+	Name<input type="text" name="name" style="
+    margin-left: 146px;
+    margin-bottom: 12px;"><br>
+	Contact number :<input type="number" name="no" style="
+    margin-left: 82px;
+    margin-bottom: 12px;"><br>
+	Age<input type="number" name="age" style="
+    margin-left: 166px;
+    margin-bottom: 12px;"><br>
+	Email-id<input type="text" name="id" style="
+    margin-left: 137px;
+    margin-bottom: 12px;"><br>
+	<h4>Card details:</h4><br>
+	Card Name<input type="text" name="cname" style="
+    margin-left: 119px;
+    margin-bottom: 12px;"><br>
+	Card number<input type="text" name="cname" style="
+    margin-left: 108px;
+    margin-bottom: 12px;"><br>
+	Expiry date<input type="text" name="exp" style="
+    margin-left: 118px;
+    margin-bottom: 12px;"><br>
+	CRC code<input type="password" name="code" style="
+    margin-left: 126px;"><br>
+	<a href="final.html"> <input type="button" value="Submit" style="
+    margin-left: 102px;
+    margin-top: 19px;"> </a>
+	</form>
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   
+  integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function()
+  {
+    $('div').hide()
+  });
+  $('button').click(function()
+  {
+    $('div').plane()
+  });
+  </script>
+</body>
+</html>

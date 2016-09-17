@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"> </script>
+<div>This is div element</div>
+<form>
+	<input type="button" value="run and class">
+</form>
+<style>
+	.red
+	{
+		font-size: 23px;
+		border:solid;
+		color: red;
+	}
+</style>
+<script type="text/javascript">
+
+
+		jQuery('input').click(function()
+		 {
+          jQuery('div').addClass('red')
+         });
+
+//		alert(jQuery(em,jQuery(p).length));
+</script>
+</body>
+</html>

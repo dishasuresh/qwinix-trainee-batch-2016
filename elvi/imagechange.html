@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<img onmouseover="old(this)" onmouseout="new1(this)" height="200px" width="200px" src="2.jpg" border="2px">
+
+<script type="text/javascript">
+	function old(x)
+	{
+		x.src="3.jpg";
+		x.height="400";
+		x.width="400";
+	}
+	function new1(x)
+	{
+		x.src="2.jpg";
+	}
+</script>
+
+</body>
+</html>

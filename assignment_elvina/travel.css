@@ -1,0 +1,60 @@
+h2{
+	color: #ff493c;
+    font-family: cursive;
+    font-size: 32px;
+    text-shadow: 2px 3px 4px whitesmoke;
+}
+h3{
+	font-family: cursive;
+	color:#3c4ca2;
+}
+#menuTag
+{
+	margin-top:15px
+
+}
+
+#menuTag ul
+{
+	list-style:none;
+	position:relative;
+	margin: 0;
+	padding: 0;
+}
+
+#menuTag ul a
+{
+	display:block;
+	color:#607d8b;
+	text-decoration:none;
+	font-weight:700;
+	font-size:18px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:Helvetica;
+}
+
+#menuTag ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#menuTag ul li.current-menu-item
+{
+	background:#ddd
+}
+
+#menuTag ul li:hover
+{
+	border: solid;
+	color: #ddd
+}
+
+button{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -12px;
+ 	}

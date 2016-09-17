@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+
+<body>
+<button>Show offers</button>
+<div>
+<table border="1px">
+    <th>Offers</th>
+	</tr>
+	<tr>
+		<td>20%</td>
+	</tr>
+	<tr>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>33%</td>
+	</tr>
+	<tr>
+		<td>-</td>
+	</tr>
+	</table>
+</div>
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   
+	integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('div').hide()
+	});
+	$('button').click(function()
+	{
+		$('div').show()
+	});
+	</script>
+
+</body>
+</html>

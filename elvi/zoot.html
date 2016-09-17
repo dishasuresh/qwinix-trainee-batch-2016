@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="lightblue">
+	<div>near</div>
+	<div>near</div>
+	<div>near</div>
+
+	<a href="#" class="link">link</a>
+	<a href="#">link</a>
+	<a href="#">link</a>
+	<a href="#" class="link">link</a>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script>
+
+ //jQuery('div').hide();
+ //jQuery('div').text('far');
+ //jQuery('div').addClass("very far");
+
+ jQuery('div')
+ 	.hide()
+ 	.text('far')
+ 	.addClass("very far")
+ 	.show();
+
+//alert('page contains' + jQuery('a').length+ ' <a> elements');
+alert('page contains' + jQuery(document.getElementsByTagName('a')).length+ ' <a> elements and background color'+jQuery(document.body).attr('bgcolor'));
+
+jQuery('a.link').attr('href','http://www.google.com');
+
+
+
+
+ </script>
+ </body>
+ </html>

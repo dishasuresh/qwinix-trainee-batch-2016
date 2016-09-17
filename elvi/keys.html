@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	To Upper Case <input type="text" id="name" onkeyup="uppercase()">
+	To Lower Case <input type="text" id="name1" onkeyup="lowercase()">
+
+<script type="text/javascript">
+	function uppercase()
+	{
+		var q =document.getElementById('name');
+		q.value=q.value.toUpperCase();
+	}
+	function lowercase()
+	{
+		var q =document.getElementById('name1');
+		q.value=q.value.toLowerCase();
+	}
+	
+</script>
+</body>
+</html>

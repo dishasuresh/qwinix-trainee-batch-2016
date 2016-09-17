@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	<p>The content will come here</p>
+	<button>Add content</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"> </script>
+<script type="text/javascript">
+	jQuery('button').click(function(){
+		jQuery('form').find('p').attr('p','yes').end().appendTo('p');
+	})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+
+	<ul>
+		<li class="red">Red</li>
+		<li>None</li>
+		<li class="gre">Green</li>
+	</ul>
+	<ol>
+		<li>name</li>
+		<li class="remove">name</li>
+		<li>name</li>
+		<li class="remove">name</li>
+	</ol>
+
+	<select id="fruit">
+		<option value="apple">Apple</option>
+		<option value="banana">Banana</option>
+		<option value="orange">Orange</option>
+		<option value="berry">Berry</option>
+	</select>
+	<button id="click">Click here</button>
+
+	<p class="color" id="chcolor">Move the cursor over to change the color</p>
+	<h4 id="chtext">Move the cursor over to change the TEXT</h4>
+
+	
+
+	<style>
+		.color {
+			border: 1px;
+			background-color: orange;
+		}
+	</style>
+
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"  
+ integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$('ul').find('.red').css('background-color','red').end().find('.gre').css('background-color','green');
+
+		$('ol').find('li.remove').replaceWith('<li>removed</li>');
+
+		$('#click').click(function()
+		{
+			alert($('#fruit').val());
+			alert($('#fruit').text());
+			alert($('#fruit : selected').text());
+		});
+
+		$('#chcolor').mouseover(function(){
+			$('p').css('background-color','yellow');
+		});
+
+		$('#chcolor').mouseout(function(){
+			$('p').css('background-color','pink');
+		});
+		$('#chtext').mouseout(function(){
+			$('h4').text('This is the new text');
+		});
+
+	</script>
+</body>
+</html>

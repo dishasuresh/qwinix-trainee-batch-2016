@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taxi</title>
+	<link rel="stylesheet" type="text/css" href="travel.css">
+</head>
+<body>
+<style type="text/css">
+	body { 
+  			background-image: url("taxi.jpg");
+  			background-repeat: no-repeat;
+  			background-size: cover;
+		}
+		</style>
+	<h3>You have selected to travel by taxi</h3>
+	Make a choice:
+	<button>Show offers</button>
+<table border="1px">
+  <tr>
+    <th>Vehicle Type</th>
+    <th>Per Km rate</th>
+    <th>Min Km/day</th>
+  </tr>
+  <tr>
+    <td><input type="radio" name="a">Tata Indica Ac 4 Seater</td>
+    <td>9.25</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="a">Chevrolet Tavera Ac 6 Seate</td>
+    <td>11.50</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="a">Toyota Innova Ac 6 Seater</td>
+    <td>13.25</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="a">Tempo Traveller Ac 12 Seater</td>
+    <td>16.50</td>
+    <td>300</td>
+  </tr>
+</table>
+
+<div>
+<table style="
+    margin-left: 422px;
+    margin-top: -121px;">
+    <th>Offers</th>
+	</tr>
+	<tr>
+		<td>20%</td>
+	</tr>
+	<tr>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>33%</td>
+	</tr>
+	<tr>
+		<td>-</td>
+	</tr>
+	</table>
+</div>
+
+<br>
+<form>
+	<h3>Make a payment</h3><br>
+	Name<input type="text" name="name" style="
+    margin-left: 146px;
+    margin-bottom: 12px;"><br>
+	Contact number :<input type="number" name="no" style="
+    margin-left: 82px;
+    margin-bottom: 12px;"><br>
+	Age<input type="number" name="age" style="
+    margin-left: 166px;
+    margin-bottom: 12px;"><br>
+	Email-id<input type="text" name="id" style="
+    margin-left: 137px;
+    margin-bottom: 12px;"><br>
+	<h4>Card details:</h4><br>
+	Card Name<input type="text" name="cname" style="
+    margin-left: 119px;
+    margin-bottom: 12px;"><br>
+	Card number<input type="text" name="cname" style="
+    margin-left: 108px;
+    margin-bottom: 12px;"><br>
+	Expiry date<input type="text" name="exp" style="
+    margin-left: 118px;
+    margin-bottom: 12px;"><br>
+	CRC code<input type="password" name="code" style="
+    margin-left: 126px;"><br>
+	<a href="final.html"> <input type="button" value="Submit" style="
+    margin-left: 102px;
+    margin-top: 19px;"> </a>
+</form>
+
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   
+	integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('div').hide()
+	});
+	$('button').click(function()
+	{
+		$('div').toggle()
+	});
+	</script>
+</body>
+</html>

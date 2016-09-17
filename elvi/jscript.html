@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Third web</title>
+	</head>
+	<body>
+		<h1>Javascript Training</h1>
+		
+ 		<script language="javascript" type="text/javascript">
+			document.getElementById('demo').style.fontSize='30px';
+			window.alert(12+8);
+			console.log(6+6);
+			debugger;
+			var x=5;
+			var y=4;
+			var w = myFunction(6,8);
+			function myFunction(a,b)
+			{
+				return a*b;
+			}
+			document.write(w);
+						
+					
+			function funct()
+			{
+				var x= document.getElementsByClassName('class').innerHTML;
+				var g= document.getElementsById('mySelect').value;
+				document.getElementById("dem").innerHTML="selected" + g;
+			}
+	
+		</script>
+ 	
+  		<select id="mySelect" onchange="funct()">
+				<option value="sun"> Sun</option>
+				<option value="moon"> Moon</option>
+				<option value="earth"> Earth</option>
+				<option value="stars"> Stars</option>
+		</select>
+
+
+
+Enter your name: <input type="text" onfocus="myFunction(this)">
+
+<p onmousedown="myFunction(this,'red')" onmouseup="myFunctio(this,'green')"> My life is good</p>
+
+<p id="dem"></p>
+<p class="class">One</p>
+<p class="class">Two</p>
+<p class="class">Three</p>
+<p class="class">Four</p>
+<p class="class">Five</p>
+			
+
+
+	</body>
+	</html>

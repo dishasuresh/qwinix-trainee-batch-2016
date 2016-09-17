@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<ol>
+	<li>first</li>
+	<li>Second</li>
+	<li>Third</li>
+	<li>Fourth</li>
+</ol>
+<form>
+	<input type="text" name="" />
+	<input type="button" name=""/>
+	<input type="radio" name=""/>
+	<input type="checkbox" name=""/>
+</form>
+<form>
+	<input type="text" name="" />
+	<input type="button" name=""/>
+	<input type="radio" name=""/>
+	<input type="checkbox" name=""/>
+</form>
+	<input type="text" name="" />
+	<input type="button" name=""/>
+	<input type="radio" name=""/>
+	<input type="checkbox" name=""/>
+<div>Click here</div>
+<script type="text/javascript">
+	//jQuery(document).ready(function($){
+	//	alert($('p').text());
+	//});
+
+alert('selected' + jQuery('input',$('form')).length+ 'inputs');
+alert('selected' + jQuery('input',document.forms[0]).length+ 'inputs');
+alert('selected' + jQuery('input','body').length+ 'inputs');
+jQuery('div').click(function()
+{
+	jQuery('div').css('background-color','red')
+})
+</script>
+
+</body>
+<p>Dom is ready</p>
+</html>
