@@ -1,0 +1,22 @@
+<html>
+
+   <head>
+
+     <script type="text/javascript">
+         function swap(image) {
+             document.getElementById('main').src = image.href;
+         }
+     </script>
+
+   </head>
+
+   <body>
+
+     <img id="main" src="img.jpeg" width="50">
+
+     <a href="img1.jpeg" onclick="swap(this); return false;"><img src="img1_small.jpeg"></a>
+     <a href="img2_big.jpeg" onclick="swap(this); return false;"><img src="img2_small.jpeg"></a>
+     <a href="img6_big.jpg" onclick="swap(this); return false;"><img src="img6_small.jpg"></a>
+
+   </body>
+</html>

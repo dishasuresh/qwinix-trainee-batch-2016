@@ -1,0 +1,23 @@
+<!DOCTYPE html>	
+<html>	
+<head>
+</head>
+<body>
+<div>
+<p>paragraph</p>
+<p>paragraph</p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$("div").find("p").parent().addClass("background");
+$('div').find('p').addBack().css('border', '1px solid red');
+$('div').find('p').fadeOut('100',function(){
+
+$('div').find('p').fadeIn('slow');
+});
+
+</script>
+</body>
+</html>

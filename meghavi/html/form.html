@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<form>
+<label >First name</label>
+<input type="text" id="fname"></br>
+<label >Last name</label>
+<input type="text" id="sname"></br>
+<label >Age</label>
+<input type="text" id="ag"></br>
+<label >Company</label>
+<input type="text" id="com"></br>
+<label >Designation</label>
+<input type="text" id="des"></br>
+</form>
+<button onclick="myfunction()">submit</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+function myfunction(){
+	var a=document.getElementById('fname').value;
+	document.getElementById('demo1').innerHTML= "fname:"+ a;
+
+	var b=document.getElementById('sname').value;
+	document.getElementById('demo2').innerHTML= "sname:"+ b;
+
+	var c=document.getElementById('ag').value;
+	document.getElementById('demo3').innerHTML= "ag:"+ c;
+
+	var d=document.getElementById('com').value;
+	document.getElementById('demo4').innerHTML= "com:"+ d;
+
+	var e=document.getElementById('des').value;
+	document.getElementById('demo5').innerHTML= "ag:"+ e;
+
+}
+	
+
+</script>
+
+</body>
+</html>

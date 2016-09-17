@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="hide" onclick="myFunction()">hide text</button> 
+<button id="show" onclick="newFunction()" style="display:none">show text</button> 
+<p id="demo">text</p>
+<script>
+function myFunction()
+{
+document.getElementById('demo').style.display='none';
+document.getElementById('hide').style.display='none';
+document.getElementById('show').style.display='block';
+}
+function newFunction()
+{
+document.getElementById('demo').style.display='block';
+document.getElementById('hide').style.display='block';
+document.getElementById('show').style.display='none';
+
+}
+</script>
+
+
+</body>
+</html>

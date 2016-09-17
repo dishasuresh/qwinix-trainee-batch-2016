@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<div id="container1" style="display:none">Hello</div>
+
+<div id="container2" style="display:none">World</div>
+
+<div id="container3" style="display:none">welcome</div>
+<button onclick="myfunction(2)">try</button>
+<script type="text/javascript">																
+function myfunction(count){
+	if(count==1){
+		document.getElementById('container1').style.display="block";
+		document.getElementById('container2').style.display="none";
+		document.getElementById('container3').style.display="none";
+
+	}
+	else if(count==2){
+		document.getElementById('container1').style.display="none";
+		document.getElementById('container2').style.display="block";
+		document.getElementById('container3').style.display="none";
+
+	}
+	else {
+		document.getElementById('container1').style.display="none";
+		document.getElementById('container2').style.display="none";
+		document.getElementById('container3').style.display="block";
+	}
+}
+</script>
+</body>
+</html>

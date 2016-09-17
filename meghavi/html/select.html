@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<select id="demo" onchange="myfunction()">
+<option value="delhi">delhi</option>
+<option value="kolkata">kolkata</option>
+<option value="dubai">dubai</option>
+<option value="chennai">chennai</option>
+</select>
+
+<p id="demo1"></p>
+<script>
+function myfunction(){
+	var x=document.getElementById("demo").value;
+	document.getElementById("demo1").innerHTML="you selected:"+x;
+}
+</script>
+</body>
+</html>

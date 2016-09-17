@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Purple Maze</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+</head>
+<body>
+<div class="header">
+<div class="top-header">
+<div class="container">
+<ul>
+<li>phn no:0123456789</li>
+<li>Email:purplemaze@gmail.com</li>
+</ul>
+</div><!--top-header-->
+</div><!--container-->
+
+<div class="container">
+
+<div class="row">
+<div class="col">
+<div class="title">
+<h1>Purple Maze</h1>
+</div><!--title-->
+</div><!--col-->
+<nav>
+<a href="Home.html">Home</a>
+<a href="Aboutus.html">About Us</a>
+<a href="Activities.html">Activities</a>
+<a href="Gallery.html">Gallery</a>
+<a href="Contactus.html">Contact Us</a>
+</nav>
+
+
+</div><!--row-->
+</div><!--container-->
+
+</div><!--header-->
+<section class="section">
+
+ <img class="mySlides" src="slider2.jpg">
+  <img class="mySlides" src="slider3.jpg">
+</section>
+<article>
+<div class="container">
+
+<h1>Welcome to Purple Maze</h1>
+<h2>Enjoy your leisure time with family and friends at our homestay and treat your taste buds to variety of malnad cuisines. 
+You can either relax indoors or visit places around to suit your interest.</h2>
+<p>Any tourism is intended to provide an escape from the monotony of daily life and commercial life.
+ That is the point which relaxes and rejuvenates our mind, which is the soul of travel and tourism.</p>
+ </article>
+ </div>
+ <footer>
+ <p>Copyright &copy; 2016 PM. All Rights Reserved.</p>  
+ </footer>  
+ <script>
+var myIndex = 0;
+myfunction();
+
+function myfunction() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(myfunction, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
