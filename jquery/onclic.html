@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Select a company from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="l&t">l&t
+  <option value="ibm">ibm
+  <option value="qwinix">qwinix
+  <option value="cisco">cisco
+</select>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="powderblue">
+<div>old content</div>
+<div>old content</div>
+<div>old content</div>
+<div>old content</div>
+
+
+
+
+<a href='#' class="link">link</a>
+<a href='#'>link</a>
+<a href='#'>link</a>
+
+
+<script src="http://ajax.googleapics.com/ajax/libs/jQuery/3.1.0/jQuery.min.js"></script>
+
+
+<script>
+	jQuery('div').text('hello');
+	jQuery('div').addClass("updatecontent");
+	jQuery('div').hide().text('hello').addClass("updatecontent").show();
+
+
+
+
+alert('page contains '+jQuery('a.link').length+ '<a> elements!');
+alert('page contains '+jQuery(document.getElementsByTagName('a')).length+ '<a> elements, And has a'
+jQuery(document.body).attr('bgcolor')+ 'background');
+jQuery('a.link').attr('href','https://www.google.co.in/');
+
+
+
+
+
+
+
+
+</script>
+		
+		
+</html>
+</body>
