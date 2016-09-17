@@ -1,0 +1,82 @@
+
+
+	.body{
+		background: url("mainadver.jpg")no-repeat center center fixed;
+		background-size:cover;
+	}
+	.aboutus{
+		background: url("about.jpg")no-repeat;
+		background-size:cover;
+		 background-attachment: fixed;
+		 opacity: 1.9;
+		  
+	}
+	.register{
+		background: url("registration.jpg")no-repeat;
+		background-size:cover;
+		 background-attachment: fixed;
+	}
+	.register1{
+		background: url("registration1.jpg")no-repeat;
+		background-size:cover;
+		 background-attachment: fixed;
+	}
+	.query{
+		background: url("query.jpg")no-repeat;
+		background-size:cover;
+		 background-attachment: fixed;
+	}
+
+	.subscribe{
+		font-size:40px;
+		color:blue;
+		text-align: center;
+		font-weight:600; 
+		font-family: helvetica;
+		text-decoration:underline;
+		text-shadow: 5px 4px 4px green;	
+	}
+
+	#my-img:hover {
+    content: url('adver1.jpg');
+	}
+	
+	#info{
+	font-size:20px; 
+	color:black;
+	word-spacing:20px;
+	letter-spacing:5px;
+	border:green;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	padding: 15px 32px;
+	border-style: solid;
+	border-width:15px;
+	}
+	.about
+	{
+		font-size:16px;
+		color:black;
+		
+	}
+	.details{
+		
+		font-size:30px;
+		color:green;
+		text-align: center;
+		font-weight:600; 
+		font-family: helvetica;
+		text-decoration:underline;
+		text-shadow: 4px 4px 8px red;
+	}
+ 	a.visited {
+    color: green;
+	}
+	a:hover {
+    color: green;
+	}
+	a.active {
+    color: blue;
+	}
+	
