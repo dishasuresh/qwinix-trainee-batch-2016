@@ -1,0 +1,47 @@
+body{
+	background-image: url("images/pbg2.jpg");
+	/*background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;*/
+}
+#mainToolBar{
+
+    margin-left: 300px;
+}
+.prod{
+	width: 260px;
+	height: 250px;
+}
+#contactFooter{
+	text-align: center;
+	border: medium solid;
+	border-bottom: unset;
+	border-left: unset;
+	border-right: unset;
+	background-color: rgba(77, 77, 77, 0.64);
+	color: azure;
+}
+table  {
+	background: #B17155; 
+	border: 1px solid red;
+	text-align: center;
+	margin-left: 235px;
+ }
+ #contactSocial{
+	width: 40px;
+	padding-right:  20px;
+	margin-top: 10px;
+}
+#prodImg{
+	float: right;
+	padding-top: 200px;
+}
+#prodBanner{
+	width: 100%;
+}
+#button{
+	color: brown;
+	width: 200px;
+	height: 50px;
+	font-size: x-large;
+}

@@ -1,0 +1,41 @@
+body{
+	background-image: url("images/bb1.jpg");
+}
+#mainToolBar{
+
+    margin-left: 310px;
+}
+#contactFooter{
+	text-align: center;
+	border: medium solid;
+	border-bottom: unset;
+	border-left: unset;
+	border-right: unset;
+	background-color: rgba(77, 77, 77, 0.64);
+	color: azure;
+	clear: left;
+}
+#aboutImg{
+	width: 600px;
+    height: 400px;
+    /*float: left;*/
+    /*padding: 100px*/
+}
+
+#aboutDescription{
+	font-size: xx-large;
+    color: white;
+    margin-bottom: 20px;
+	margin-top: 50px;
+}
+#aboutBranch{
+	font-size: 30px;
+	color: brown;
+	padding-bottom: 50px;
+	text-align: center;
+}
+#country{
+	width: 70px;
+	padding-left: 50px;
+	padding-top: 30px;
+}

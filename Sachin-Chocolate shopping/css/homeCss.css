@@ -1,0 +1,67 @@
+body{
+	background-image: url("images/bgO3.jpg");
+	background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: top;
+}
+#mainToolBar{
+
+    margin-left: 310px;
+}
+
+#offer{
+	 /*padding-left: 225px;*/
+    /*padding-top: 200px;*/
+    position: absolute;
+    /*width: 780px;
+    height: 465px;*/
+    margin-left: 220px;
+    /*margin-top: 150px;*/
+}
+#choc{
+	width: 780px;
+	height: 280px;
+	margin-top: 0px; 
+	margin-left: 220px;
+	margin-bottom: 100px;
+}
+#newchoc{
+    margin-left: 220px;
+}
+#contactFooter{
+	text-align: center;
+	border: medium solid;
+	border-bottom: unset;
+	border-left: unset;
+	border-right: unset;
+	background-color: rgba(77, 77, 77, 0.64);
+	color: azure;
+	clear: left;
+}
+#contactSocial{
+	width: 40px;
+	padding-right:  20px;
+	margin-top: 10px;
+}
+#prodImg{
+    float: right;
+    padding-top: 100px;
+}
+/*input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 25%;
+}*/

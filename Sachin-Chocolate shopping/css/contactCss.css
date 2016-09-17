@@ -1,0 +1,35 @@
+body{
+		background-image: url("images/back.gif");
+	}
+#mainToolBar{
+
+    margin-left: 300px;
+}
+#contactMarquee{
+		color: aliceblue;
+	font-size: x-large;
+	direction: left;
+}
+#contactForm{
+	color: floralwhite;
+	text-align: center;
+}
+#contactCustomer{
+	color: floralwhite;
+	text-align: center;
+	border: solid;
+	border-color: bisque;
+}
+#contactFooter{
+	text-align: center;
+	border: medium solid;
+	border-bottom: unset;
+	border-left: unset;
+	border-right: unset;
+	background-color: rgba(77, 77, 77, 0.64);
+	color: azure;
+}
+#contactSocial{
+	width: 30px;
+	padding-left: 15px;
+}
