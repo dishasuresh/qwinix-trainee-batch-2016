@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="me()"> click </button>
+<script type="text/javascript">
+	var data= {
+		"name":"sample name",
+		"age":"22",
+		"address":{ 
+		"street":"deepanagar",
+		"city": "mysore"
+	}
+}
+	console.log(data.name);
+	console.log(data.address.street);
+	function me() {
+		document.write(data.name+"<br/>"+data.age+"<br/>"+data.address);
+	}
+
+
+
+</script>
+
+
+</body>
+</html>

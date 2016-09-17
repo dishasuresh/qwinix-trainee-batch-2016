@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+
+		<title> </title>
+	</head>
+
+	<body>
+
+
+		<p id="demo">welcome to java script</p>
+		</body>
+		
+	<!-- <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button> -->
+		<script language="javascript" type="text/javascript">
+				// Javascript code
+				
+				window.alert(stop);
+				var x = myfunction(16,22);
+				console.log(x);
+				
+				function myfunction(a,b) {
+					return a + b;
+				}
+				
+				
+				document.getElementById("demo").innerHTML = x; 
+
+				
+
+		</script>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+onchange event
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> event </title>
+	</head>
+ 		<select id="mycar" onchange="myfun()">
+			<option value="audi"> audi </option>
+			<option value="benz"> benz </option>
+			<option value="ferrari"> ferrari </option>
+			<option value="bmw"> bmw </option>
+  		</select>
+	<body>
+		<script>
+			function myfun() {
+				var x= document.getElementById("mycar").value;
+				document.getElementById("demo").innerHTML = "your selection is: " + x +" fasdfhsfh";
+			}
+		</script>
+		<p id="demo"></p>
+			
+	</body>
+</html>	

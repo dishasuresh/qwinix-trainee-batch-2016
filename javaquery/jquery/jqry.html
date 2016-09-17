@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> title </title>
+</head>
+<body bgcolor="blue">
+	<div> old content</div>
+	<div> old content</div>
+	<div> old content</div>
+	<div> old content</div>
+
+	<a href="#" class="link">link </a>
+	<a href="#">link </a>
+	<a href="#" class="link">link </a>
+	<a href="#">link </a>
+	<a href="#">link </a>
+	<a href="#">link </a>
+
+<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<script type="text/javascript">
+//jQuery('div').hide(); 
+//jQuery('div').addClass("updated content"); displays class name
+//jQuery('div').show();
+
+jQuery('div').hide().text('new content').addClass("updatedContent").show();
+
+alert('page contains'+ jQuery('a').length + '<a> elements!');
+alert('page contains'+ jQuery('a').length + 
+'<a> elements,And has a'+ jQuery(document.body).attr('bgcolor')+ 'background');
+//jQuery('a.link').attr('href','http://www.google.com').attr('target','_blank');
+</script>
+
+
+
+</body>
+</html>

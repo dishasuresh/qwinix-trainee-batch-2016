@@ -1,0 +1,106 @@
+*{
+	margin:5px;
+	padding: 5px;
+}
+h1{
+	font:bold 22px tahoma;
+}
+h2{
+	font:bold 16px tahoma;
+}
+header,section, nav,aside,article,footer{
+	display: block;
+}
+body{
+	text-align:center;
+}
+#big{
+	border:1px solid black;
+	width:1000px;
+	margin:28px auto;
+	text-align:left;
+}
+#head{
+	background: red;
+	padding:10px;
+	border:1px solid black;
+}
+P[name=""] {color:blue;}
+
+#header1{
+	padding: 5px;
+	font:tahoma;
+	font-size: 38px;
+	background-color: red;
+	text-align: center;
+	}
+
+#nav1{
+	 background:grey;
+	 color:black;
+}
+#nav1 li{
+	display: inline-flex;
+	list-style: none;
+	 padding:0px;
+	 border:1px solid blue;
+	 font:bold 16px tahoma;
+}
+#section{
+	float:center;
+	width:570px;
+margin top:2px;	
+margin left:5px;
+}
+#aside{
+	float: right;
+	width: 240px;
+	margin top: 20px;
+	margin-right: 45px;
+	padding: 10px;
+	background: lightgreen;
+	border: 2px solid black;
+}
+#foot{
+	clear:both;
+	font: bold tahoma;
+	text-align: center;
+	background: yellow;
+	border-top: 2px solid black;
+	font-size: 14px;
+	padding:5px;
+}
+article{
+	background: #FFFBCC;
+	border: 1px solid red;
+	padding: 2px;
+	margin-bottom: 5px;
+}
+#para1{
+	font-size: 16px
+	font:tahoma;
+}
+#asided{
+	border:2px solid brown;
+	align:left;
+	background: lightgrey;
+	font-color:orange;
+	width:140px ;
+	height: 10px;
+}
+
+a{
+	font:red !imp;
+}
+#form1{
+background-color: grey;
+font: bold 18px tahoma;
+text-align: left;
+}
+#header3{
+	padding: 5px;
+	font:tahoma;
+	font-size: 30px;
+	background-color: blue;
+	text-align: center;
+	}

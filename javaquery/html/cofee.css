@@ -1,0 +1,28 @@
+body{
+		background-color:green;
+	}
+.me1{
+text-align:center;
+font-size:50px;
+letter-spacing:10px;
+word-spacing:4px;
+text-indent:5cm;
+text-decoration: overline;
+text-transform: lowercase;
+white-space: inherit;
+text-shadow:5px 6px brown;
+}
+.bingo{
+	border: 2px dotted black;
+	margin: 1% 2% 3% 4%;
+	position: relative;
+	left: 30px;
+}
+.anchor{
+	font-size: 30px;
+}
+.anchor:visited { color:red; opacity: .8; }
+.anchor:active { color:pink; opacity: 1; }
+.anchor:hover { color:orange; opacity: 1; }
+
+ul ~  p{color:red;}

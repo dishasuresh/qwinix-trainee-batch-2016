@@ -1,0 +1,32 @@
+body{
+		background-color:lightblue;
+	}
+h1  {
+		color:blue;
+		text-align: center;
+		font-size: 40px
+	}
+		.btm{background: orange;}
+
+.table-custom {
+	background:#ccc; border: 1px solid red;
+}
+#colorz{
+	color: brown;
+	font-size: 25px;
+	font-style: italic;
+	margin: 15px 10px 15px 0spx;
+}
+div> h1{
+	color: yellow;
+}
+.me1{
+text-align:left;
+letter-spacing:7px;
+word-spacing:4px;
+text-indent:5cm;
+text-decoration: overline;
+text-transform: lowercase;
+white-space: inherit;
+text-shadow:5px 6px cyan;
+}

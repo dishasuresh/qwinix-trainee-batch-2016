@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html>
+	
+	<head>
+
+		<title> introduction to html</title>
+
+	</head>
+
+	<style type="text/css">
+	#myid{
+	color:orange;
+	}
+
+	.class1{
+	font-weight:51112;
+	}
+
+	.class2{
+	font-style:inherit;
+	}
+
+	</style>
+
+	<body>
+
+		<nav>
+			<a href="basic1.html"> html </a>
+			<a href="1st.html"> css </a>
+		</nav>
+
+		<h1 align="center"> align center </h1>
+		<h2 align="right"> learn </h2>
+
+		<body bgcolor = "#999010"> </body>
+
+		<h3 id="myid"> earn </h3>
+		<h4 class="class1 class2"> ear </h4>
+		<h5 id="myid"> hear </h5>
+		<h6> near </h6>
+
+		<ol>
+		<li> mysore</li>
+		<li>karkala</li>
+		</ol>
+
+		<dl>
+		<dt> coffee</dt>
+		<dd> caffeine</dd>
+		<dt> salt</dt>
+		<dd> sodium</dd>
+
+		<font> Default FONT Tag </font>
+➢ <font color="red"> Font Tag with color red </font>
+➢ <font size="1"> Font Tag with size 1 </font> 
+
+	<div style="color:#0000ff">
+	<p> R B D </p>
+	</div>
+
+		<p> my name is bhuvanprasad</p>
+		<pre> my name is bhuvan      prasad</pre>
+
+		<img src="" alt="vivekananda"/>
+
+		<form>
+			<label> First Name:</label> <input type="text" /> </br>
+            <label> middle Name:</label> <input type="text" /> </br>
+            <label> password:</label> <input type="number" /> </br>
+
+            <input type="radio" name="register"> anand</br>
+            <input type="radio" name="register" >aadarsh </br>
+            <input type="radio" name="register"> abhi</br>
+            <input type="radio" name="register"> nanda</br>
+            <input type="radio" name="register"> anandhi ben </br>
+            <input type="radio" name="register">  kv anand</br
+
+            <input type="checkbox" value="cycle"/>cycle </br>
+            <input type="checkbox" value="car"/>Car 
+
+            <input type="submit"/>
+
+			<select>
+			 
+			 <option>--Select City--</option>
+			 <option>New Delhi</option>
+			 <option>Kolkata</option>
+			 <option>Mumbai</option>
+			 <option>mysuru</option> 
+
+			</select>
+
+			<textarea> rows = "40" cols = "5 = "4" cols = "50
+
+			welcome 
+
+			</textarea>
+
+		</form>
+
+		<a href="http://www.quora.com"/> join quora </a>
+		<table border="2">
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+
+			<tr>
+				<td>abhi</td>
+				<td>31</td>
+			</tr>
+
+			<tr>
+				<td>Shubham</td>
+				<td>100</td>
+			</tr>
+
+		</table>
+
+		<marquee direction="up"> marquee</marquee>marquee>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="one"></div>
+	<div id="two"></div>
+	<div id="three"></div>
+	<div id="four"></div>
+	<div id="five"></div>
+	<p></p>
+	<p class="showText"></p>
+<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">
+	var arr= ["one","two","three","four","five"];
+	var obj={one:1,two:2,three:3,four:4,five:5};
+
+	jQuery.each(arr, function (i,val) {
+		$('#'+ val).text("mine is"+ val + ",");
+		return(val!=="three");
+	});
+	jQuery.each(obj, function (i,val) {
+		$('#'+ i).append(document.createTextNode("-" + val));
+	});
+	</script>
+	<script type="text/javascript">
+		jQuery('p').html('<strong> hello world</strong><em> this is john</em>');
+		jQuery('p.showText').text('<strong> hello world</strong><em> this is john</em>');
+		alert('p').html()
+	</script>
+	
+</body>
+</html>

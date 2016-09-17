@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<div id ="container1" style="display:none">
+		hello
+	</div>
+ 	<div id ="container2" style="display:none">
+ 		world
+	</div>
+	<div id ="container3" style="display:none">
+ 		hello folks!
+	</div>
+<button onclick="myfun(3)"> try</button>
+
+<script type="text/javascript">
+	function myfun(count){
+		if (count ==1){
+			document.getElementById('container1').style.display = "block";
+			document.getElementById('container2').style.display = "none";
+			document.getElementById('container3').style.display = "none";
+		}
+		else if (count ==2){
+			document.getElementById('container1').style.display = "none";
+			document.getElementById('container2').style.display = "block";
+			document.getElementById('container3').style.display = "none";
+		}
+		else {
+			document.getElementById('container1').style.display = "none";
+			document.getElementById('container2').style.display = "none";
+			document.getElementById('container3').style.display = "block";
+		}
+		}
+	
+</script>
+
+
+
+</body>
+</html>

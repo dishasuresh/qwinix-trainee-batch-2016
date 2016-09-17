@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> title </title>
+</head>
+<body bgcolor="blue">
+	<div> old content</div>
+	<div> old content</div>
+	<div> old content</div>
+	<div> old content</div>
+
+	<a href="#" class="link">link </a>
+	<a href="#">link </a>
+	<a href="#" class="link">link </a>
+	<a href="#">link </a>
+	<a href="#">link </a>
+	<a href="#">link </a>
+
+<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<script type="text/javascript">
+//jQuery('div').hide(); 
+//jQuery('div').addClass("updated content"); displays class name
+//jQuery('div').show();
+
+jQuery('div').hide().text('new content').addClass("updatedContent").show();
+
+alert('page contains'+ jQuery('a').length + '<a> elements!');
+alert('page contains'+ jQuery('a').length + 
+'<a> elements,And has a'+ jQuery(document.body).attr('bgcolor')+ 'background');
+//jQuery('a.link').attr('href','http://www.google.com').attr('target','_blank');
+</script>
+</body>
+</html>
+
+
+2
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>
+	<p>para</p>
+	<p>para</p>
+</div>
+	<h3> anchors</h3>
+	<a href='#' > anchor element</a>
+	<a href='#' > anchor element</a>
+	<a href='#' class='remove'> anchor element</a>
+
+<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+//redirects to jquery
+	$('<p><a>jquery</a></p>').find('a').attr('href','http://www.jquery.com').end().appendTo('body');
+
+	//$('div').find("p").parent().addClass("background");
+	//$('div').find("p").addBack().css('border','1px solid black');
+	//$('div').find("p").fadeOut('100',function(){
+	//$('div').find('p').fadeIn('slow');
+	//});
+	$('a').remove('.remove');//removes the class
+	$('a').removeAttr('href');
+
+</script>
+
+
+</body>
+</html>
+
+3
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>click here</div>
+ 	<form>
+ 		<input type="button" name=" hide text">
+ 	</form>
+ 	
+ 	<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+ 	<script type="text/javascript">
+
+ 	//alerts 7 inputs
+ 		alert('selected'+jQuery('input',$('form')).length+ 'inputs');
+ 		//alerts 3 inputs
+ 		alert('selected'+jQuery('input',document.forms[1]).length+ 'inputs');
+ 		//alerts 10 inputs
+ 		alert('selected'+jQuery('input','body').length+ 'inputs');
+
+	//jQuery('div').click(function(){
+	//jQuery('div').css('background-color','red');
+//})
+jQuery('div').show();
+
+ 	</script>
+
+
+
+</body>
+</html>
+
+4
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button> add content </button>
+<p> paragraph should be written</p>
+<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$.text('display bold')
+				});
+	})
+</script>
+
+</body>
+</html>
+
+5
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+.h1addclass{
+	color:red;
+	border: solid black;
+}
+</style>
+<body>
+<div><h1> this is heading</h1></div><hr>
+<button id="h1addclass"> class method</button>
+<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("button").click(function(){
+		$("h1").addClass('h1addclass');
+	});
+});
+
+</script>
+
+</body>
+</html>

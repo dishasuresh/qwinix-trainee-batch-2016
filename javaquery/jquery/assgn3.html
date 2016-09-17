@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+	$('#mybutton').click(function(){
+		alert($('#myid').val());
+		alert($('#myid').text());
+		alert($('#myid :selected').val());
+		
+	});
+});
+</script>
+</head>
+<body>
+	<select id="myid">
+		<option value="banglore">blore </option>
+		<option value="mysore"> mysore</option>
+		<option value="udupi"> udupi</option>
+		<option value="bidar"> bidar</option>
+	</select>
+	<button id="mybuton"> click</button>
+</body>
+</html>
