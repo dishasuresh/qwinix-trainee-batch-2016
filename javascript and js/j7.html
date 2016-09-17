@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<select id="selcolor">
+<option>..Select item..</option>
+<option value="red">red</option>
+<option value="green">green</option>
+<option value="blue">blue</option>
+</select>
+<button id="showval">Show slelected opion value</button>
+<!-- <ul>
+<li class="green">name</li>
+<li class=replace>name</li>
+<li class=red>name</li>
+<li>name</li>
+<li class=green>name</li>
+<li class=replace>name</li>
+</ul> -->
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
+<script type="text/JavaScript">
+				$(document).ready(function(){
+				$("#showval").click(function(){
+					console.log($('#selcolor').val())
+					alert($('#selcolor').val());
+					alert($('#selcolor').text());
+			});
+		});
+		
+		// jQuery('.red').css('background-color','red');
+		// jQuery('.green').css('background-color','green');
+		// jQuery('.replace').replaceWith('<li>Removed</li>');
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+</html>
+<head>
+<title></title>
+</head>
+<body bgcolor="yellow">
+
+<a href='#'>link</a>
+<a href='#' class="link">link</a>
+<a href='#'>link</a>
+<a href='#' class="link">link</a>
+<a href='#'>link</a>
+<a href='#' class="link">link</a>
+<a href='#'>link</a>
+<!-- <div>old content</div> -->
+<!-- <div>old content</div> -->
+<!-- <div>old content</div> -->
+<!-- <div>old content</div> -->
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
+
+<script type="text/JavaScript">
+alert('Page contains' + jQuery('a').length+'<a> elements!');
+alert('Page contains' + jQuery(document.getElementsByTagName('a')).length + '<a> Elements,And has a' + jQuery(document.body).attr('bgcolor')+'background');
+jQuery('a.link').attr('href','https://www.google.co.in');
+// jQuery('div').text('new content').hide().addClass("updatedContent");
+</script>
+</body>
+</html>

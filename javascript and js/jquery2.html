@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+<form>
+<p> the dom is ready</p>
+<ol>
+	<li>First</li>
+	<li>second</li>
+	<li>third</li>
+</ol>
+<input type="button" name=""/>
+</form>
+<form>
+<p> the dom is ready</p>
+<ol>
+	<li>First</li>
+	<li>second</li>
+	<li>third</li>
+</ol>
+<input type="button" name="Hidetext"/>
+
+</form>
+<div>clickhere</div>
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
+<script type="text/JavaScript">
+alert('selected' + jQuery('input',$('form')).length+'inputs');
+alert('selected' + jQuery('input',document.forms[0]).length + 'inputs');
+alert('selected' + jQuery('input','body').length + 'inputs');
+
+jQuery('div').click(function() {
+	jQuery('div').css('background-color','blue');
+});
+</script>
+</body>
+</html>

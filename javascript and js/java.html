@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+ <label>First Name:</label><input type="text" id="1" onkeyup="function1()"/></br>
+ <p id="2"></p>
+
+<!-- <img onmouseover="image1(this)" onmouseout="image2(this)" src="1.jpg" width="500px" height="500px "> -->
+
+<script type="text/javascript">
+// function function1()
+// {
+// x.src="1.jpg"
+
+// }
+// function image2(x)
+// {
+// x.src="petss.jpeg"
+
+// }
+function function1()
+{
+	var a=document.getElementById('1').value;
+	var  b=a.toUpperCase();
+	document.getElementById('2').innerHTML=b;
+}
+
+	</script>
+</body>
+</html>

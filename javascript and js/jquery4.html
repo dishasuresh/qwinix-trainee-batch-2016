@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>
+<p>This is a paragraph</p>
+<p>This is paragraph</p> 
+<!-- This is a paragraph <em>This is a paragraph</em> -->
+<!-- <em>This is a paragraph</em><em>This is a paragraph</em><b> This is a paragraph</b> -->
+<!-- </p> -->
+</div>
+<script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
+<script type="text/JavaScript">
+
+
+	// alert('The' + jQuery('p').length + 'Paragraphs in all contain' + jQuery('p').find('em').length+'italic');
+// alert(jQuery('em',jQuery('p')))
+$('div').find("p").parent().addClass("background");
+$('div').find('p').addBack().css('border','1px solid red');
+$('div').find('p').fadeOut('10000',function(){$('div').find('p').fadeIn('slow');
+});
+
+
+</script>
+</body>
+</html>
