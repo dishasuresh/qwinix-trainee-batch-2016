@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Json</title>
+</head>
+<body>
+<button  onclick="fn()"> Get profile data</button><br><br>
+<div id="details">
+	<span>NAME :</span><span id="name"></span><br>
+	<span>AGE :</span><span id="age"></span><br>
+	<span>STREET :</span><span id="street"></span><br>
+	<span>CITY :</span><span id="city"></span><br>
+
+
+
+</div>
+<script type="text/javascript">
+	
+
+
+	var data ={
+	"name" : "Venaktesh s",
+	"age" :32,
+	"add":{
+		"street":"hebbal 1st stage",
+		"city":"mysore",
+		"place" :{
+			"name" :"a"
+		} 
+	}
+}
+console.log(data.name);
+console.log(data.add.city);
+
+
+document.getElementById('details').style.display="none";
+function fn(){
+	document.getElementById('name').innerHTML=data.name;
+	document.getElementById('age').innerHTML=data.age;
+	document.getElementById('city').innerHTML=data.add.city;
+	document.getElementById('street').innerHTML=data.add.street;
+	document.getElementById('details').style.display="block";
+}
+
+</script>
+</body>
+</html>

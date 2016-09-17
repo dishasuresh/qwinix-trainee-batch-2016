@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jq</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<style type="text/css">
+		#mouseevent{
+			background-color: yellow;
+			padding: 30px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="goo">remove</li>
+		<li class="remove">remove</li>
+		<li >name</li>
+		<li class="remove">remove</li>
+		<li class="foo">remove</li>
+	</ul>
+<p></p>
+
+
+<select id="showColor" >
+	<option value="red" >red</option>
+	<option value="green" selected>green</option>
+
+</select>
+<button id="btn">Show the color</button>
+
+<!--***********************************************************************************-->
+<p id="mouseevent">This is a pargraph</p>
+
+<p id="one"></p>
+<p id="two"></p>
+<p id="three"></p>
+<p id="four"></p>
+<p id="five"></p>
+
+<!--***********************************************************************************-->
+<p id="htmlElement"></p>
+<p id="textEmbed"></p>
+
+<!--***********************************************************************************-->
+
+
+	<script type="text/javascript">
+	
+	//	jQuery('ul').find('.goo').css('background-color','red').end().find('.foo').css('background-color','yellow');
+
+		//$('ul li').replaceWith('<li>qwerty</li>');
+		//$('ul li').remove('.foo');
+
+		$('#btn').click(function(){
+			
+			alert($('#showColor').val());
+			alert($('#showColor').text());
+			alert($('#showColor :selected').text());
+
+		})
+
+		$('#mouseevent').hover(function(){
+			$('#mouseevent').css('background-color','red');
+			$('#mouseevent').text("this is the paragraph");
+		})
+		$('#mouseevent').mouseleave(function(){
+			
+			$('#mouseevent').text("Mouse left");
+			$('#mouseevent').css('background-color','yellow');
+		})
+
+		$('#mouseevent').mouseenter(function(){
+			$('#mouseevent').text("Mouse entered")
+		
+		})
+
+
+		/***************************************************/
+		var arr=["one","two","three","four","five"];
+		var obj={"one":1,"two":2,"three":3,"four":4,"five":5};
+
+		$.each(arr,function(i,val){
+			$("#"+val).text("Mine is "+ val+".");
+			return(val!=="three")
+		});
+			$.each(obj,function(i,val){
+				$("#"+i).append(document.createTextNode("-" + val));
+			});
+	
+		/***************************************************/
+		$('#htmlElement').html('<strong>Name :</strong><i>Venkatesh</i>');
+		alert($('#htmlElement').html());
+		$('#textEmbed').text('<strong>Name :</strong><i>Venkatesh</i>');
+		alert($('#textEmbed').html());
+
+		alert($('#textEmbed').text());
+	</script>
+
+
+</body>
+</html>

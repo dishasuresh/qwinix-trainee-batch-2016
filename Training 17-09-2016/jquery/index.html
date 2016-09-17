@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--*********************************************************************-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+	
+
+	/*	jQuery(document).ready(function(){
+			alert($('p').text());
+			alert(jQuery('ol li:first').text());
+			
+		})*/
+</script>
+
+
+
+<!--*********************************************************************-->
+
+
+</head>
+<body bgcolor="#cfd888">
+<p>DOM ready</p>
+	<div>old content</div>
+	<div>old content</div>
+	<div>old content</div>
+	<div>old content</div>
+
+	<a href="#" class="link"> hai</a>
+	<a href="#">hai</a>
+	<a href="#" class="link">hai</a>
+	<a href="#">hai</a>
+	<a href="#">hai</a>
+
+	<ol>
+		<li>one</li>
+		<li>two</li>
+		<li>three</li>
+		<li>four</li>
+		<li>five</li>
+	</ol>
+<form>
+	<input type="text" name="">
+	<input type="radio" name="">
+	<input type="checkbox" name="">
+</form>
+<form>
+	<input type="text" name="">
+	<input type="radio" name="">
+	<input type="checkbox" name="">
+</form>
+	<input type="text" name="">
+	<input type="radio" name="">
+	<input type="checkbox" name="">
+<br>	
+<!--<div style="border: 1px solid black; min-width:50px">
+	<p class="text">hai</p>
+</div>
+<br>
+
+<button type="button" class="btn">hide</button>
+<button type="button" class="btna">show</button>
+-->
+
+
+
+
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+-->
+<div class="divtext">
+	div text
+</div>
+<button type="button" class="btnx">show</button>
+
+
+<script type="text/javascript">
+//alert('jQuery'+jQuery.fn.jquery)
+
+	// jQuery('div')
+	// 		.text('gmail')
+	// 		.hide()
+	// 		.addClass("updateContent")
+	// 		.show();
+		
+		/*	alert('page contains' + jQuery('a.link').length + '<a> tags and color = ' + jQuery(document.body).attr('bgcolor')+'background' );
+		*/
+		// jQuery('a.link').attr('href','http://www.google.com/').text('google.com').addClass('new').attr('target','blank');
+
+/*
+		alert(jQuery('ol li:first').text());
+
+		jQuery(document).ready(function(){
+			alert($('p').text());
+			
+		})*/
+		//alert(jQuery('ol li:eq[0]').text());
+
+
+		/*alert(jQuery('input',$('form')).length);
+		alert(jQuery('input',document.forms[0]).length);
+		alert(jQuery('input',$('body')).length);*/
+
+		// jQuery('div').click(function(){
+		// 	$('div').css('color','red');
+		// })
+		$('.btn').hide();
+		jQuery('.btn').click(function(){
+
+			
+				$('.text').css('opacity',0).hide();
+				$('.btn').hide();
+				$('.btna').show();
+				
+		})
+		jQuery('.btna').click(function(){
+
+			
+				$('.text').css('background-color','yellow').show();
+				$('.btn').show();
+				$('.btna').hide();
+		})
+
+		jQuery('.btnx').click(function(){
+			$('.divtext').addClass('divcol');
+			$('.btnx').hide();
+
+		})
+
+</script>
+	
+</body>
+</html>

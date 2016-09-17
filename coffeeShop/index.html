@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+
+<link rel="stylesheet" type="text/css" href="home.css">
+
+
+
+
+</head>
+<body>
+
+<!-------------------------------------------------------------------------------->
+<header>
+<a href="index.html" id="h1-home">Coffee House</a>
+<nav class="menuBarItems" >
+	
+	<!--<a class="nav" href="#" onmouseup="changePage(this)">Home</a>
+	|<a class="nav" href="#" onmouseup="changePage(this)">Menu</a>
+	|<a class="nav" href="#" onmouseup="changePage(this)">Contact</a>-->
+
+	<div id="menuItems">
+	<ul>
+		<li><a class="nav" href="#" onmouseup="changePage(this)">Home</a>|</li>
+		<li><a href="#" onmouseup="changePage(this)">AboutUs</a>|</li>
+		<li><a class="nav" href="#" >Menu</a>|
+				<ul>
+					<li><a href="#" onmouseup="changePage(this)">Coffee</a></li>
+					<li><a href="#" onmouseup="changePage(this)">Snacks</a></li>
+				</ul>
+
+
+		</li>
+		<li><a class="nav" href="#" onmouseup="changePage(this)">Contact</a></li>
+	</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------->
+
+<div id="home">
+	
+
+	<div class="slideImage">
+		<img class="homeImg" src="images/home/a.jpg">
+		<q class="homeTextValue">good day starts with <span class="coffee">coffee</span> and you</q>
+	</div><!--class="slideImage"-->
+	<div class="slideImage">
+		<img class="homeImg" src="images/home/b.jpg">
+		<q class="homeTextValue">Every thing gets better with <span class="coffee">coffee</span></q>
+	</div><!--class="slideImage"-->
+	<div class="slideImage">
+		<img class="homeImg" src="images/home/c.jpg">
+		<q class="homeTextValue">What on earth could be more luxurious than a sofa, A book , and a cup of <span class="coffee">coffee</span></q>
+	</div><!--class="slideImage"-->
+	<div class="slideImage">
+		<img class="homeImg" src="images/home/d.jpg">
+		<q class="homeTextValue">coffee dosen't ask silly questions, <span class="coffee">coffee</span> understands</q>
+	</div><!--class="slideImage"-->
+	<div class="slideImage">
+		<img class="homeImg" src="images/home/e.jpg">
+		<q class="homeTextValue">great idea starts with great <span class="coffee">coffee</span></q>
+	</div><!--class="slideImage"-->
+</div><!--container-->
+
+
+
+</div><!--id="home"-->
+
+
+<!------------------------------------------------------------------------------------------------------>
+
+
+
+<div id="contact">
+
+	<div id="background"></div>
+
+
+
+		<div id="contactForm">
+		
+			<form class="myForm" action="post">
+			
+				<label>Name &nbsp; :  </label>
+				<input type="text" placeholder="Name" autofocus class="boxFormat" id="name" onkeyup="toCaps()" ><br><br>
+				<label>E-Mail : </label>
+				<input type="email" placeholder="Email" class="boxFormat" required><br><br>
+				<label>Phone : </label>
+				<input type="text" placeholder="Phone No." class="boxFormat"><br><br>
+				<label>Male :</label><input type="radio" name="gender">
+				<label>Female :</label><input type="radio" name="gender" ><br><br><hr>
+
+				<div id="messageDiv">
+						<label>Querie type:</label>
+					<select id="messageType" class="boxFormat" onchange="messageCall()">
+						<option value="select">Select Type</option>
+						<option value="suggestion">Suggestion</option>
+						<option value="enquiry">Enquiry</option>
+						<option value="message">Message</option>
+						<option value="details" >Other</option>
+					
+					</select><br>
+							<div id="otherMessage">
+								<br><label>Others :</label>
+								<input type="text" class="boxFormat"></input>								
+								</div>
+							</div><br><!--otherMessage-->
+			
+
+
+
+			<div id="textSubmit">
+				<textarea rows="10" cols="27" id="textArea" class="boxFormat"></textarea><br>
+				<input type="submit"  id="submit" onclick="submitContactForm()" onmouseover="buttonColorChange1()" onmouseout="buttonColorChange2()">
+			</div><!--id="textSubmit"-->
+			</div><!--messageDiv-->
+			</form>	
+
+		</div><!--id="contactForm"-->
+	<div><!--id="background"-->
+			<div id="submitSuccess">
+				<img src="images/tick.png">
+				<h2>Successfully Submitted your data...</h2>
+			</div><!--id="submitSuccess"-->
+		
+</div><!--id="contact"-->
+
+<!---------------------------------------------------------------------------------------------------->
+
+<div id="coffee" >
+	<div class="coffeeList">
+		<img id="coffeeListImage1" src="images/americano.jpg" ><span class="title">Americano</span>
+		<p class="coffeeDetails" >An Americano is a single shot of espresso added to a cup of hot water. The name is thought to have originated as a bit of an insult to Americans, who had to dilute their espresso when it first gained popularity on this side of the pond. Many coffee houses have perfected it, however, and the result has become a creamy, rich espresso-based coffee that you can sip and savor before jumping on your Vespa and heading to the soccer field.</p>
+	</div><hr><!--class="coffeeList"-->
+
+	<div class="coffeeList">
+		<img id="coffeeListImage2" src="images/c3.jpg" ><span class="title">Espresso</span>
+		<p class="coffeeDetails" >Espresso is a strong black coffee made by forcing steam through dark-roast aromatic coffee beans at high pressure in an espresso machine. A perfectly brewed espresso will have a thick, golden-brown crema (foam) on the surface. If the crema is good, the sugar you add will float on the surface for a couple of seconds before slowly sinking to the bottom.
+</p>
+	</div><hr><!--class="coffeeList"-->
+
+	<div class="coffeeList">
+		<img id="coffeeListImage3" src="images/latte.jpg" ><span class="title">Latte</span>
+		<p class="coffeeDetails" >A caffe latte is a single shot of espresso to three parts of steamed milk. Sugar your latte to taste and discover the wonderful world of dipping. Cookies, sponge-type cake slices and even fresh Italian bread can transform your coffee into a breakfast that even my nonna (grandmother) would approve of.</p>
+	</div><hr><!--class="coffeeList"-->
+
+	<div class="coffeeList">
+		<img id="coffeeListImage3" src="images/2.jpg" ><span class="title">Cappuccino</span>
+		<p class="coffeeDetails" >This hugely popular coffee drink has become a staple that even the most common of corner coffee shops carries (or at least a version of it). A true cappuccino is a combination of equal parts espresso, steamed milk and milk froth. This luxurious drink, if made properly, can double as a dessert with its complex flavors and richness.</p>
+	</div><hr><!--class="coffeeList"-->
+	
+</div><!--id="menu"-->
+<!---------------------------------------------------------------------------------------------------------->
+<dir id="snacks">
+	<h1 id="snackTitle">Snacks</h1>
+	<table id="snacksTable" border="1">
+		<tr>
+			<td><img class="imgSize" src="snacks/afghani-chicken-biryani.jpg"><p>afghani-chicken-biryani</p> </td>
+			<td><img  class="imgSize" src="snacks/chickenRolls.png"><p>chicken-roll_small</p> </td> 
+			<td><img  class="imgSize" src="snacks/dessert.jpg"><p>dessert</p></td>
+		</tr>
+		<tr>
+			<td><img  class="imgSize" src="snacks/potato sandwitch.jpg"><p>potato sandwitch</p></td>
+			<td><img  class="imgSize" src="snacks/The-Couch-Potato-Sandwich.jpg"><p>Potato couch</p></td>
+			<td><img  class="imgSize" src="snacks/tawa-pizza-smoked-chicken.jpg"><p>pizza</p></td>
+		</tr>
+		<tr>
+			<td><img  class="imgSize" src="snacks/berry-bite-cupcake-20x229.jpg"><p>cupcake</p></td>
+			<td><img  class="imgSize" src="snacks/ccd-veg-samosa.jpg"><p>veg samosa</p></td>
+			<td><img  class="imgSize" src="snacks/choco-chip-cookie.jpg"><p>choco cookie</p></td>
+		</tr>
+
+	</table>
+
+</dir>
+<!---------------------------------------------------------------------------------------------------------->
+<div id="aboutUsc">
+<div id="aboutUs">
+	
+
+	<img class="aboutimage" src="images/aboutback.jpg">
+	<h1 id="abouttitle">Coffee House</h1>
+	<marquee>Try new snack with new offer</marquee>
+</div>
+<dir class="abouttext">
+	<p>India Coffee House chain was started by the Coffee Cess Committee in 1936, when the first outlet was opened in Bombay. In the course of the 1940s there were nearly 50 Coffee Houses all over British India. It was during the late 1890s that the idea was formed.Due to a change in the policy in the mid 1950s, the Board decided to close down the Coffee Houses. Encouraged by the communist leader A. K. Gopalan(AKG), the workers of the Coffee Board began a movement and compelled the Coffee Board to agree to handover the outlets to the workers who then formed Indian Coffee Workers' Co-operatives and renamed the network as Indian Coffee House. A co-operative began in Bangalore on 19 August 1957, and one was established in Delhi on 27 December 1957.[1][3] Later Bellary and Madras (Chennai) Societies were separated from their mother societies.</p>
+	
+</dir>
+</div>
+
+
+<!---------------------------------------------------------------------------------------------------------->
+
+<footer>
+	<address id="address"><p>Cafe Coffee House #645, RN Circle, Hebbal I Stage Mysore-570016<br><span id="copyright">
+	&copy;Cafe Coffee House 2016</span></p></address>
+</footer>
+	
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------------->
+
+<script type="text/javascript" src="home.js"></script>
+
+</body>
+</html>

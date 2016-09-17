@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assign</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/home/qwinix/workspace/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	
+</head>
+<body>
+<a href="#" id="link">Show form</a>
+<div id="divs" class="container">
+
+<div class="row">
+
+<div class="col-md-4"></div>
+<div class="col-md-4">
+	<form class="formGroup">
+	<label>Name : </label>
+		<input type="text" id="name" ><br>
+		<label>Password :</label>
+		<input type="password" id="password"><br>
+		<input type="checkbox" ><label>Remember me</label><br>
+		<input type="submit" class="submit" >
+	</form>
+</div><!--class="col-md-8"-->
+
+
+<div class="col-md-4"></div>
+</div><!--class="row"-->
+</div><!--id="divs" class="container"-->
+
+
+<script type="text/javascript">
+
+$('#divs').hide();
+	$('#link').click(function(){
+		$('#divs').show();
+	});
+
+$('.submit').click(function(){
+		if($('#name').val()=="" && $('#password').val()=="" ){
+				$('#name').css('border-color','red');
+				$('#password').css('border-color','red');
+		}
+		else{
+			return;
+		}
+	});
+
+
+</script>
+
+</body>
+</html>

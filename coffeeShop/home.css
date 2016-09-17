@@ -1,0 +1,415 @@
+
+
+
+	.coffee{
+		color: brown;
+		font-family: sans-serif;
+	}
+
+
+/***************************************************************************************************/
+
+
+
+
+
+
+
+
+.boxFormat{
+	width: 100%;
+	border-radius: 7px;
+}
+
+#coffeeListImage1{
+
+	width: 20%;
+	height: 20%;
+	border-radius: 50px;
+
+	
+
+}
+#coffeeListImage1:hover {
+	width: 30%;
+	height: 30%;
+	border-radius: 50px;
+	
+}
+
+#coffeeListImage2 {
+	width: 20%;
+	height: 20%;
+	border-radius: 50px;
+	
+}
+
+
+#coffeeListImage2:hover {
+	width: 30%;
+	height: 30%;
+	border-radius: 50px;
+	
+}
+
+#coffeeListImage3 {
+	width: 20%;
+	height: 20%;
+	border-radius: 50px;
+	
+}
+
+
+#coffeeListImage3:hover {
+	width: 30%;
+	height: 30%;
+	border-radius: 50px;
+	
+}
+
+.coffeeDetails{
+
+	position: absolute;
+	display: inline;
+	margin: 45px 0px 0px 0px;
+	padding: 15px;
+	font-style: italic;
+	text-indent: 50px;
+	text-align: justify;
+	color: white;
+
+
+}
+
+.coffeeDetails:hover {
+	background-color: brown;
+}
+
+#submitSuccess{
+	display: none;
+	padding-top: 10px;
+}
+
+#coffee{
+	background-image: url("images/gif.gif");
+	
+	background-size: cover;
+	display: none;
+}
+.title{
+	position: absolute;
+	display: inline;
+	font-weight: 200px;
+	font-size: 40px;
+	font-variant: small-caps;
+	color: yellow;
+}
+/*---------------------------------------------NAV ----------------------------------------------------*/
+#h1-home{
+	position: absolute;
+	text-decoration: none;
+	font-size: 50px;
+	font-weight: bolder;
+	font-variant: small-caps;
+	background-color: blue;
+	color: white;
+	
+	font-style: italic;
+
+	
+}
+	#menuItems{
+			background-color: blue;
+			padding: 10px;
+			margin-bottom: 10px;
+		
+		}
+		#menuItems ul {
+			font-weight: bolder;	
+			text-align: right;
+			color: black;
+			font-size: 20px;
+
+		}
+
+		#menuItems ul li{
+			display: inline;
+			padding: 10px;
+			position: relative;
+		}
+		#menuItems ul li a:hover{
+			background-color: black;
+			color: white;
+		}
+
+
+
+		#menuItems li ul {
+			list-style: none;
+			position: absolute;
+			display: block;
+			
+			display: none;
+
+			left: 0;
+				
+		}
+		
+
+
+		#menuItems  a{
+			text-decoration: none;
+			color: black;
+			margin: 20px;
+			padding: 4px;
+		}
+		
+
+		#menuItems ul li:hover > ul{
+			display: block;
+
+		}
+
+/*---------------------------------------------NAV ENDS----------------------------------------------------*/
+
+/*---------------------------------------FOOTER SECTION --------------------------------------------------------*/
+
+
+footer{
+	
+	position: relative;
+	left: 0;
+	bottom: 0px;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	opacity: 0.7;
+	
+	padding-top: 5px;
+}
+
+footer:hover{
+	opacity: 1;
+}
+
+
+#copyright{
+	font-size: 10px;
+}
+
+/*---------------------------------------FOOTER SECTION ENDS --------------------------------------------------------*/
+
+/*---------------------------------------CONTACT FORM--------------------------------------------------------*/
+
+
+#contact{
+	position: relative;
+	background-image: url("images/formBackground1.jpg");
+	background-size: cover;
+	display: none;
+	width: 100%;
+	width: 100%;
+
+
+
+}
+#background, #contactForm{
+	width: 100%;
+	height: 100%;
+}
+
+.myForm{
+	position: relative;
+	top: 20px;
+	left: 50%;
+	width: 500px;
+	height: 700px;
+}
+
+
+form label{
+	color: black;
+	font-weight: bolder;
+	font-size: 22px;
+	
+}
+
+	
+form h1 {
+	color: white;
+	font-style: arial;
+	text-align: center;
+}
+
+textarea {
+	border-radius: 8px;
+}
+#otherMessage{
+	display: none;
+}
+
+#textArea {
+	display: none;
+}
+#submit{
+	display: none;
+	padding: 5px;
+	border-radius: 8px;
+}
+
+/*---------------------------------------CONTACT FORM END--------------------------------------------------------*/
+
+/*---------------------------------------HOME PAGE --------------------------------------------------------*/
+
+
+.homeTextValue{
+	display: none;
+}
+
+
+#home{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.homeImg{
+
+	width: 100%;
+	height: 600px;
+	opacity: 0.5;
+
+}
+.homeTextValue{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	font-weight: bolder;
+	font-size: 40px;
+	font-style: italic;
+	font-variant: small-caps;
+}
+/*---------------------------------------HOME PAGE ENDS--------------------------------------------------------*/
+
+
+/*---------------------------------------HEADER SECTION --------------------------------------------------------*/
+
+
+
+/*---------------------------------------HEADER SECTION ENDS--------------------------------------------------------*/
+
+
+/**---------------------------------------SNACKS PAGE------------------------------------------------------*/
+	.imgSize{
+			padding: 5px;
+			border: 2px solid black;
+		}
+		#snacks{
+			position: relative;
+			text-align: center;
+			display: none;
+			margin-top: -20px;
+		}
+		#snacksTable{
+			position: relative;
+			left: 20%;
+			right: 20%;
+			width: 60%;
+			border: 2px solid black;
+			font-weight: bolder;
+			font-size: 20px;
+			background-color: white;
+			border-width: 5px;
+
+		}
+		#snacksTable tr td{
+			padding: 10px;
+		}
+
+
+		#snacks{
+
+			background-image: url(snacks/back.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+		}
+		#snackTitle{
+			color: white;
+			background-color: black;
+			font-variant: small-caps;
+			font-size: 50px;
+			width: 100%;
+			margin-left: -20px;
+		}
+		.imgSize{
+			height: 200px;
+		}
+
+/**---------------------------------------SNACKS PAGE ENDS------------------------------------------------------*/
+
+/**---------------------------------------ABOUT  PAGE ------------------------------------------------------*/
+
+
+	#aboutUsc{
+		position: relative;
+		display: none;
+		position: relative;
+			width: 100%;
+			height: 100%;
+			top: 0;
+	}
+
+
+
+	#aboutUs{
+		
+			position: relative;
+			width: 100%;
+			height: 100%;
+			top: 0;
+
+		}
+		.aboutimage{
+			width: 100%;
+			height: 700px;
+			opacity: 0.5;
+		}
+
+		.abouttext{
+			position: absolute;
+			top: 170px;
+			font-size: 30px;
+			text-align: justify;
+			padding: 50px;
+			text-indent: 50px;
+		}
+
+		.abouttext:hover{
+			background-color: brown;
+			color: white;
+		}
+
+		#abouttitle{
+			position: absolute;
+			display: inline;
+			top: 0;
+			left: 40%;
+			font-variant: small-caps;
+			color: black;
+			font-size: 50px;
+			font-style: italic;
+			
+		}
+
+		marquee{
+			position: absolute;
+			top: 120px;
+			color: brown;
+			font-weight: bolder;
+			font-size: 20px;
+		}
+
+/**---------------------------------------ABOUT  PAGE ENDS------------------------------------------------------*/

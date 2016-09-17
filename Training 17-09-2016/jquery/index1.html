@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<!--	<div>
+		<p>hai<em>what r u doing</em>then </p>
+		<em>venkatesh</em>
+		<p>hai<em>what r u doing</em>then<em>what r u doing</em> then</p>
+	</div>
+-->
+
+
+<div>
+	<p>1st paragraph</p>
+	<p>1st paragraph</p>
+</div>
+<a href="#">link1</a>
+<a href="#" value="gmail">href attribute</a>
+<a class="a" href="#">class a</a>
+
+
+
+<script type="text/javascript">
+	//alert(" total em's = " + $('div p > em').length + " " +  );
+	$('div').find('p').parent().addClass('newClass');
+	$('div').find('p').addBack().css('border','1px solid red');
+	
+	$('div').find('p').fadeOut(1000,function(){
+		$('div').find('p').fadeIn(1000);
+	});
+
+$('<p><a>google</a></p>').find('a').attr('href','https://www.google.com/').end().appendTo('body');
+$('a').removeAttr('href');
+
+//$('a').remove();
+$('a').remove('.a');
+
+	
+
+</script>
+
+
+</body>
+</html>
